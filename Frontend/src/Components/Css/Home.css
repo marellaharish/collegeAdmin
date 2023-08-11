@@ -1,0 +1,1099 @@
+@font-face {
+    font-family: "Plutur";
+    src: local(Plutur), url("../Fonts/Plutur.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+.body-bg {
+    background-image: linear-gradient(to right top, #ffffff, #f9f9ff, #f0f3ff, #e6eeff, #dae9ff);
+}
+
+.img-fluid {
+    width: 80%;
+    height: 90% !important;
+    margin-right: 125px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    /* filter: blur(195px); */
+}
+
+.img-fluid-left {
+    width: 80%;
+    height: 90%;
+    margin-left: 125px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    /* filter: blur(195px);
+    display: none; */
+}
+
+.loginPoster {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.loginForm {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form {
+    width: 80%;
+    height: 90vh;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.login-txt {
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 20%;
+    cursor: pointer;
+    mix-blend-mode: multiply;
+}
+
+.input-Data {
+    width: 60%;
+}
+
+.top-bar {
+    width: 100vw;
+    height: 40px;
+    background-color: #3b71ca;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.top-bar span {
+    font-size: 14px;
+}
+
+.top-bar div {
+    display: flex;
+    align-items: center;
+}
+
+.marquee {
+    color: #ffffff;
+    margin-top: 5px;
+    background-color: #3b71ca;
+}
+
+i {
+    color: #dbdbdb;
+    margin-right: 5px;
+}
+
+.Signup-txt {
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 2.5rem;
+}
+
+.btn-logo {
+    width: 18px;
+}
+
+.note-main {
+    background: #3b71ca;
+    width: 173px;
+    height: 35px;
+    border-radius: 0 0 10px 10px;
+    transform: rotate(90deg);
+    position: fixed;
+    top: 40%;
+    right: -70px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutCollege {
+    width: 80%;
+    height: 100px;
+    background-color: rgb(0 0 0);
+    position: absolute;
+    top: 75px;
+    left: 95px;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: column;
+    text-align: center;
+    display: none;
+}
+
+
+
+.header {
+    width: 100%;
+}
+
+.homeHead {
+    font-family: Plutur;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px #ced0d3;
+    color: white;
+    user-select: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 5rem;
+    transition: all 0.25s ease-out;
+}
+
+.homeHead:hover {
+    text-shadow: -16px 6px 15px #ced0d3;
+}
+
+.image-slider {
+    width: 100%;
+    height: 100vh;
+}
+
+/* .carousel-caption {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    bottom: 25%;
+    right: 0px;
+    transform: translate(-50%, -50%);
+    background-color: #00000069;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    width: 70%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.carousel-item img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+
+.main2 {
+    width: 100%;
+    height: calc(100vh - 145px);
+    background: url(../Assets/bgPng.png), rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading {
+    width: 45%;
+    background-color: #3b71ca;
+    border-radius: 10px;
+    margin-top: 15px;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+
+.heading:hover {
+    scale: 1.03;
+    width: 49%;
+}
+
+.main-head {
+    width: 55%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-head h1 {
+    font-weight: 600;
+}
+
+.img-head {
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    object-fit: cover;
+}
+
+.image-text {
+    width: 35%;
+    background-color: #3b71ca;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    bottom: 20px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    border-bottom: 5px solid #ffffffc6;
+    overflow: hidden;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.counter-text {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    /* background-color: #3b71ca; */
+    color: #3b71ca;
+}
+
+.counter-text span {
+    font-weight: 600;
+    font-size: 4rem;
+
+}
+
+.counter-text p {
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 25px;
+
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 2.5rem;
+    padding: 0 2rem;
+    background: #3b71ca;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    width: 12rem;
+    top: 25px;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    background-image: linear-gradient(to right, #0060ff, #008aff, #00a9ff, #00c3fb, #12d9eb);
+    transition: all 0.475s;
+}
+
+.main-3 {
+    width: 100%;
+    height: calc(100vh - 95px);
+    background-image: url(../Assets/bgPng.png);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d4d4d4;
+
+}
+
+.four-images-gal {
+    width: 75%;
+    background-color: #008aff;
+    margin: auto;
+    height: 700px;
+    margin-top: 20px;
+}
+
+.full-image-gal {
+    width: 24%;
+    height: 700px;
+    background-color: #008aff;
+    margin-top: 20px;
+}
+
+.gallery {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.h-50percent {
+    height: 49%;
+}
+
+.elementor-widget1 {
+    width: 65%;
+    height: 100%;
+    float: left;
+    background-color: #00ff80;
+}
+
+.elementor-widget2 {
+    width: 34%;
+    height: 100%;
+    float: left;
+    background-color: rgb(72, 255, 0);
+}
+
+.inner-elv1 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.inner-elv2 {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* 
+.side__nav {
+    width: 270px;
+    height: calc(100vh - 150px);
+    position: absolute;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.side__nav:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.side__navItems {
+    width: 90%;
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.side__navItems:active,
+.side__navItems:hover {
+    border-left: 2px solid #0060ff;
+
+} */
+
+
+.main__body {
+    width: 100%;
+    height: calc(100vh - 145px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 6px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    scrollbar-width: none;
+    background-image: url(../Assets/students5.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* background-color: #0060ff; */
+}
+
+.main__bodySub {
+    width: 100%;
+    height: calc(100vh - 145px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin: 6px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    scrollbar-width: none;
+    background-image: url(../Assets/bgPng.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.carousel-inner {
+    width: auto;
+    height: 65vh;
+}
+
+.college__features {
+    width: 207px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.college__details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    margin: auto;
+    background-color: #008aff;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.features__logo {
+    width: 65px;
+    margin-top: 5px;
+}
+
+.college__features:hover {
+    transform: scale(1.1);
+}
+
+.college__features p {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.carousel-control-next-icon::after {
+    content: inherit;
+}
+
+.carousel-control-prev-icon::after {
+    content: inherit;
+}
+
+.college__details .head__features h1 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 12.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.college__details a {
+    text-decoration: none;
+    color: #000;
+}
+
+.College__Admissions {
+    /* background: rgb(59, 113, 202); */
+    background: linear-gradient(90deg, rgba(59, 113, 202, 1) 0%, rgba(59, 113, 202, 1) 45%, rgba(163, 197, 255, 1) 100%);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.Admissions__head {
+    width: 75%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Admissions__head h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.main__1 {
+    background: url(../Assets/bgPng.png), white;
+}
+
+.main__3 {
+    width: 100%;
+    height: calc(100vh - 145px);
+}
+
+.student__section {
+    width: 100%;
+    height: calc(100vh - 145px);
+    /* display: flex;
+    justify-content: center; */
+    /* background-color: #008aff; */
+}
+
+.breadcrumb-item {
+    color: #ffffff !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+
+    color: #ffffff !important;
+}
+
+.breadcrumb-item a {
+    color: #ffffff !important;
+}
+
+.routing__border {
+    border: 3px solid #3b71ca;
+}
+
+.Student__Section__head h4 {
+    font-weight: 600 !important;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.Student__Section__data {
+    width: 99%;
+    margin-top: 10px;
+}
+
+.w-5 {
+    width: 5% !important;
+}
+
+.w-10 {
+    width: 10% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+
+.w-30 {
+    width: 30% !important;
+}
+
+.w-40 {
+    width: 40% !important;
+}
+
+.w-50 {
+    width: 50% !important;
+}
+
+.w-60 {
+    width: 60% !important;
+}
+
+.w-70 {
+    width: 70% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.w-90 {
+    width: 90% !important;
+}
+
+.join__txt {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    color: #151515;
+}
+
+.about__title h2 {
+    color: #333146;
+    font-size: 42px !important;
+    font-weight: 600 !important;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.about__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.AboutBanner__img {
+    border-radius: 50%;
+    margin-right: 10rem;
+    width: 300px;
+    height: auto;
+}
+
+.form__full__box {
+    background: linear-gradient(65deg, #5958a0 0%, rgba(59, 113, 202, 1) 100%);
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0px 0px 81px 0px rgba(47, 47, 47, 0.1);
+    border-radius: 10px;
+}
+
+
+.form__full__box .form_title h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-bottom: 0;
+    font-weight: 700;
+    position: relative;
+    color: #ffffff;
+}
+
+.form__full__box .form_title p {
+    padding-top: 15px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.form__full__box .form_title {
+    margin-bottom: 40px;
+}
+
+.form__full__box .register-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form__full__box .register-form .form-group label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.form__full__box .register-form .form-group input,
+.form__full__box .register-form .form-group select {
+    position: relative;
+    background: transparent;
+    border-bottom: 1px solid #ebebeb;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0);
+    height: 50px;
+    padding: 10px 15px 10px 40px;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Rubik", sans-serif;
+    z-index: 1;
+}
+
+input::placeholder {
+    color: #ffffff !important;
+    opacity: 1;
+}
+
+.form__full__box .register-form .form-group select option {
+    background: #5958a0;
+}
+
+.form__full__box .register-form .form-group span {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    color: white;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+
+.form__full__box .register-form .register-btn-box .register-btn {
+    background: #ff5a2c;
+    color: white;
+    padding: 0 50px;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.form__full__box .register-form .register-btn-box {
+    padding-top: 20px;
+}
+
+.about_content {
+    padding-top: 200px;
+    padding-left: 36px;
+}
+
+.about_content p {
+    padding-bottom: 20px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 15px;
+    color: #6a7a83;
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+}
+
+.about_content a {
+    color: #333146;
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+}
+
+.admission_courses {
+    padding: 54px 0 48px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.Undergraduate__Courses h2 {
+    color: #333146;
+    font-size: 35px !important;
+    font-weight: 500 !important;
+    margin: 30px 30px 30px 0px;
+    font-family: "Poppins", sans-serif;
+}
+
+.Course__branches {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+
+    margin-top: 25px;
+}
+
+.branches {
+    width: 400px;
+    height: 220px;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.branches__img {
+    width: 100px;
+    margin-left: 15px;
+}
+
+.calender__img {
+    width: 35px;
+}
+
+.branches__btn {
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    margin: 25px 0;
+}
+
+.Undergraduate__Courses__details {
+    text-indent: 50px;
+    text-align: justify;
+    padding-bottom: 20px;
+    margin: 0;
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 15px;
+    color: #6a7a83;
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+}
+
+.footer {
+    background: linear-gradient(90deg, rgba(59, 113, 202, 1) 0%, rgba(59, 113, 202, 1) 45%, rgb(127, 174, 255) 100%);
+}
+
+.mix__blend {
+    /* mix-blend-mode: multiply; */
+}
+
+.footer a,
+.footer p,
+.footer h6,
+.footer span,
+.footer i {
+    color: white !important;
+    text-decoration: none;
+}
+
+.Results__Management {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results__form {
+    flex-direction: column;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #008aff;
+    background-color: #ffffff;
+}
+
+.results__form__head {
+    width: 100%;
+    background-color: #008aff;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.results__form__head h5 {
+    color: white;
+}
+
+.Examination__Results h1 {
+    color: #2f2f2f;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.dob__text {
+    font-size: 10px;
+    color: red;
+}
+
+.Captche__img {
+    width: 125px;
+}
+
+.results__data ul li {
+    font-weight: 400;
+    line-height: 26px;
+    font-size: 16px;
+    color: #6a7a83;
+    font-family: "Rubik", sans-serif;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.Examination__Management h2 {
+    color: #333146;
+    font-size: 34px !important;
+    font-weight: 600 !important;
+    margin-top: 15px;
+    font-family: "Poppins", sans-serif;
+}
+
+.Examination__Management {
+    margin-top: 20px;
+}
+
+.Instruction__btn {
+    width: 250px;
+    height: 45px;
+    background-color: white;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    margin: 25px 0;
+}
+
+.Instruction__Circulars {
+    background-color: #0060ff;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.Instruction__Circulars h2 {
+    color: #ffffff;
+}
+
+.timeTable__results{
+    width: 70%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.time__table{
+    width: 400px;
+    height: 150px;
+    background-color: #f1f1f1; 
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.5s;
+    color: #000000 !important;
+}
+
+.time__table h4{
+    font-weight: 600;
+}
+.timeTable__logo{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.time__table:hover{
+    background-color: #0060ff;
+    color: #ffffff !important;
+}
+
+.holidays__table{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data__holiday{ 
+    margin-top: 25px;
+}
+
+/* .data__holiday tr, .data__holiday th, .data__holiday td{
+    text-align: center;
+} */
+
+th{
+    background-color: #bdbdbd !important;
+}
+
+.timeTanle__branch{
+
+
+}
+
+
+.timeTanle__branch {
+    color: #000 !important;
+    position: relative;
+    text-decoration: none;
+    width: 320px;
+    font-size: 18px !important;
+    /* transition: transform 0.5s; */
+    margin-top: 5px;
+    cursor: pointer;
+    
+}
+
+.timeTanle__branch::before {
+    background: #00a9ff;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+    color: #ffffff !important;
+}
+
+.timeTanle__branch:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #ffffff !important;
+}
+
+.timeTanle__branch:hover{
+    color: #ffffff !important;
+}
+

@@ -1,0 +1,60 @@
+{
+  "name": "mdb-react-template",
+  "version": "6.1.0",
+  "description": "template for mdb-react-ui-kit",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.3.1",
+    "circletype": "^2.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mdb-react-ui-kit": "^6.1.0",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.3.1",
+    "mysql2": "^3.6.0",
+    "nodemon": "^2.0.22",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.8.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "^18.1.0",
+    "react-fast-marquee": "^1.6.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-made-with-love": "^1.0.1",
+    "react-parallax-tilt": "^1.7.151",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "5.0.1",
+    "sass": "^1.63.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "template",
+    "react"
+  ],
+  "author": "MDBootstrap",
+  "license": "MIT",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
