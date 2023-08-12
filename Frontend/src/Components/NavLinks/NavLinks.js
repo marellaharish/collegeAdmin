@@ -53,7 +53,7 @@ function NavLinks(props) {
                         <MDBCollapse navbar show={showNav}>
                             <MDBNavbarNav>
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink active aria-current='page' href='#'>
+                                    <MDBNavbarLink active aria-current='page' href='/home'>
                                         Home
                                     </MDBNavbarLink>
                                 </MDBNavbarItem>

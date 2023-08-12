@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica;
+    font-family: "Rubik", Helvetica !important;
 }
 
 body {
@@ -1010,57 +1010,58 @@ a {
     color: #ffffff;
 }
 
-.timeTable__results{
+.timeTable__results {
     width: 70%;
     height: auto;
     margin: 35px 0;
 }
 
-.time__table{
+.time__table {
     width: 400px;
     height: 150px;
-    background-color: #f1f1f1; 
+    background-color: #f1f1f1;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     transition: all 0.5s;
     color: #000000 !important;
 }
 
-.time__table h4{
+.time__table h4 {
     font-weight: 600;
 }
-.timeTable__logo{
+
+.timeTable__logo {
     width: 60px;
     margin-right: 10px;
 }
 
-.time__table:hover{
+.time__table:hover {
     background-color: #0060ff;
     color: #ffffff !important;
 }
 
-.holidays__table{ 
+.holidays__table {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.data__holiday{ 
+.data__holiday {
     margin-top: 25px;
 }
 
-/* .data__holiday tr, .data__holiday th, .data__holiday td{
+
+.data__holiday tr,
+.data__holiday th,
+.data__holiday td {
     text-align: center;
-} */
-
-th{
-    background-color: #bdbdbd !important;
 }
 
-.timeTanle__branch{
-
-
+th {
+    background-color: aliceblue !important;
 }
+
+
 
 
 .timeTanle__branch {
@@ -1068,11 +1069,12 @@ th{
     position: relative;
     text-decoration: none;
     width: 320px;
-    font-size: 18px !important;
+    font-size: 16px !important;
     /* transition: transform 0.5s; */
     margin-top: 5px;
+    padding: 5px;
     cursor: pointer;
-    
+
 }
 
 .timeTanle__branch::before {
@@ -1093,7 +1095,97 @@ th{
     color: #ffffff !important;
 }
 
-.timeTanle__branch:hover{
+.timeTanle__branch:hover {
     color: #ffffff !important;
 }
 
+.Academic__Calendar h2 {
+    font-weight: 600 !important;
+}
+
+.Academic__Calendar__list {
+    width: 100%;
+    background-color: #fff;
+    border: 2px dashed #dbdbdb;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10PX;
+}
+
+.Academic__info__list {
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10PX;
+    transition: all 0.4s;
+}
+
+.Academic__info__list:hover {
+    background-color: aliceblue;
+}
+
+.pfg__logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.link__logo {
+    width: 20px;
+}
+
+.avatar__dp {
+    width: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 25px;
+}
+
+.student__profile {
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.student__dept_p {
+    font-size: 14px;
+}
+
+.location__Map {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: var(--bs-nav-tabs-link-active-color);
+    background-color: var(--mdb-primary) !important;
+    border-color: none !important;
+    color: white !important;
+}
+
+.Faculty__Profiles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profiles {
+    width: 350px;
+    height: 180px;
+    background-color: #ffffff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavLinks from "../Components/NavLinks/NavLinks";
+import Footer from "../Components/Footer/Footer";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import Slide1 from "../Components/Assets/pexels-pixabay-122429.jpg";
 import ImageSlider from "../Components/component/ImageSlider";
@@ -83,24 +84,27 @@ function Dashboard() {
                   <p>Holidays and Time Table</p>
                 </div>
               </Link>
+              <Link to="/AttendanceTracking">
+                <div className="college__features">
+                  <img
+                    src={AttendanceTracking}
+                    alt="..."
+                    className="features__logo"
+                  />
+                  <p>Attendance Tracking</p>
+                </div>
+              </Link>
 
-              <div className="college__features">
-                <img
-                  src={AttendanceTracking}
-                  alt="..."
-                  className="features__logo"
-                />
-                <p>Attendance Tracking</p>
-              </div>
-
-              <div className="college__features">
-                <img
-                  src={FacultyProfiles}
-                  alt="..."
-                  className="features__logo"
-                />
-                <p>Student and Faculty Profiles</p>
-              </div>
+              <Link to="/StudentAndFacultyProfiles">
+                <div className="college__features">
+                  <img
+                    src={FacultyProfiles}
+                    alt="..."
+                    className="features__logo"
+                  />
+                  <p>Student and Faculty Profiles</p>
+                </div>
+              </Link>
 
               <div className="college__features">
                 <img
@@ -286,6 +290,7 @@ function Dashboard() {
               </MDBCol>
             </MDBRow>
           </div>
+          <Footer />
         </div>
       </>
     </React.Fragment>

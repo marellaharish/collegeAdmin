@@ -10,6 +10,9 @@ import CollegeAdmissions from "./Views/Pages/CollegeAdmissions";
 import ResultsManagement from './Views/Pages/ResultsManagement';
 import ExaminationManagement from './Views/Pages/ExaminationManagement';
 import HolidaysandTimeTable from './Views/Pages/HolidaysandTimeTable';
+import AttendanceTracking from './Views/Pages/AttendanceTracking';
+import StudentAndFacultyProfiles from './Views/Pages/StudentAndFacultyProfiles';
+
 
 
 
@@ -26,6 +29,8 @@ function App() {
         <Route path="/resultsManagement" index element={<ResultsManagement />} />
         <Route path="/ExaminationManagement" index element={<ExaminationManagement />} />
         <Route path="/HolidaysandTimeTable" index element={<HolidaysandTimeTable />} />
+        <Route path="/AttendanceTracking" index element={<AttendanceTracking />} />
+        <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/navLinks" index element={<NavLinks />} />
         <Route path="/footer" index element={<Footer />} />
       </Routes>
