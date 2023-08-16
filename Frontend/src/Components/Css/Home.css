@@ -1189,3 +1189,9 @@ th {
     justify-content: space-between;
     padding: 10px;
 }
+
+.profiles span {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 16px;
+}

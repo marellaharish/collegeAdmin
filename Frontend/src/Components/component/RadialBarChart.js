@@ -1,6 +1,12 @@
+import React from "react"
+
 function RadialBarChart() {
     return (
-        <div>RadialBarChart</div>
+        <React.Fragment>
+            <>
+                sdf
+            </>
+        </React.Fragment>
     )
 }
 export default RadialBarChart
