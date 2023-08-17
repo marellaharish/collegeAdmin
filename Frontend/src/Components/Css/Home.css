@@ -580,7 +580,7 @@ p {
 
 
 .Admissions__head {
-    width: 75%;
+    width: 80%;
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -772,10 +772,10 @@ p {
     z-index: 1;
 }
 
-input::placeholder {
+/* input::placeholder {
     color: #ffffff !important;
     opacity: 1;
-}
+} */
 
 .form__full__box .register-form .form-group select option {
     background: #5958a0;
@@ -1194,4 +1194,57 @@ th {
     text-transform: uppercase;
     font-weight: 600 !important;
     font-size: 16px;
+}
+
+.nav-tabs .nav-link.active {
+    border-radius: 0px !important;
+}
+
+.Library__start p {
+    font-size: 18px !important;
+    font-weight: 600;
+}
+
+.Library__content {}
+
+.quick__search {
+    position: relative;
+}
+
+.search_icon {
+    width: 20px;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    opacity: 0.6;
+}
+
+.library__card__main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.library__card {
+    width: 300px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+}
+
+.card__icon {
+    width: 75px;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.lib__inner__details {
+    width: 48%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    overflow: hidden;
 }

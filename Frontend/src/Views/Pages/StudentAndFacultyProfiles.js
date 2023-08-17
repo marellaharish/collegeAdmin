@@ -82,33 +82,16 @@ function StudentAndFacultyProfiles() {
                         </div>
                     </MDBContainer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <MDBContainer fluid className='mb-5 bg-white mt-3'>
-
-
-
                         <MDBTabs className='mb-3'>
                             <MDBTabsItem>
                                 <MDBTabsLink onClick={() => handleCustomClick('tab1')} active={customActive === 'tab1'}>
-                                    First Tab
+                                    Faculty Profiles
                                 </MDBTabsLink>
                             </MDBTabsItem>
                             <MDBTabsItem>
                                 <MDBTabsLink onClick={() => handleCustomClick('tab2')} active={customActive === 'tab2'}>
-                                    Second Tab
+                                    Students Profiles
                                 </MDBTabsLink>
                             </MDBTabsItem>
                         </MDBTabs>
