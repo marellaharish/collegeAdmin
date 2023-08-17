@@ -607,7 +607,41 @@ function LibraryManagement() {
                                         See All
                                     </a>
                                 </div>
+                                <div className='lib__book__details '>
+                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+
+
+                                    </div>
+                                </div>
+                                <div className='lib__book__details '>
+                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+
+
+                                    </div>
+                                </div>
+                                <div className='lib__book__details '>
+                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+
+
+                                    </div>
+                                </div>
+                                <div className='lib__book__details '>
+                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+
+
+                                    </div>
+                                </div>
+                                <div className='lib__book__details '>
+                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+
+
+                                    </div>
+                                </div>
                             </div>
+
+
+
+
                         </div>
                     </MDBContainer>
                     <Footer />
