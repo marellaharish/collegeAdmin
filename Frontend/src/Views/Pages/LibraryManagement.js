@@ -7,8 +7,14 @@ import search_icon from '../../Components/Assets/search-svgrepo-com.svg';
 import card1 from '../../Components/Assets/card1.svg';
 import card2 from '../../Components/Assets/card2.svg';
 import card3 from '../../Components/Assets/card3.svg';
-import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
+import Book1 from '../../Components/Assets/Book1.webp';
+import Book2 from '../../Components/Assets/Book2.webp';
+import Book3 from '../../Components/Assets/Book3.webp';
+import Book4 from '../../Components/Assets/Book4.jpg';
+import Book5 from '../../Components/Assets/Book5.jpg';
+import Book6 from '../../Components/Assets/Book6.jpg';
 
+import { MDBAccordion, MDBAccordionItem } from 'mdb-react-ui-kit';
 import { MDBBadge } from 'mdb-react-ui-kit';
 import {
     MDBBreadcrumb,
@@ -247,97 +253,6 @@ function LibraryManagement() {
                             </MDBAccordion>
                         </div>
                         <div className='mt-4'>
-                            <h4 className='fw-bold'>About Library</h4>
-                            {/* <MDBTable bordered striped>
-
-                                <MDBTableBody>
-                                    <tr className=''>
-                                        <td rowSpan={5} className='w-40'>
-                                            1. BOOKS
-                                        </td>
-                                        <td>Mark</td>
-                                        <td className='w-10'>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mark</td>
-                                        <td>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>@twitter</td>
-                                        <td>@twitter</td>
-                                    </tr>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Mark</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@fat</td>
-                                    </tr>
-
-                                </MDBTableBody>
-                            </MDBTable> */}
-
                             <div className='library__card__main'>
                                 <div className='library__card'>
                                     <h2 className='fw-bold mt-3 ms-3 '> 1223</h2>
@@ -607,35 +522,52 @@ function LibraryManagement() {
                                         See All
                                     </a>
                                 </div>
-                                <div className='lib__book__details '>
-                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
+                                <h4 className='fw-bold mt-3'>Top Choices</h4>
+                                <div className='d-flex'>
 
-
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center flex-row'>
+                                            <img src={Book1} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
                                     </div>
-                                </div>
-                                <div className='lib__book__details '>
-                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
-
-
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center'>
+                                            <img src={Book2} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
                                     </div>
-                                </div>
-                                <div className='lib__book__details '>
-                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
-
-
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center'>
+                                            <img src={Book3} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
                                     </div>
-                                </div>
-                                <div className='lib__book__details '>
-                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
-
-
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center'>
+                                            <img src={Book4} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
                                     </div>
-                                </div>
-                                <div className='lib__book__details '>
-                                    <div className='d-flex justify-content-between align-items-center mx-3 mt-3'>
-
-
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center'>
+                                            <img src={Book5} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
                                     </div>
+                                    <div className='lib__book__details '>
+                                        <div className='d-flex justify-content-between align-items-center'>
+                                            <img src={Book6} />
+                                        </div>
+                                        <p className='mb-0 fw-bold text-center'>The Pragmatic Programmer</p>
+                                        <p className='mb-0 text-secondary text-center'>David</p>
+                                    </div>
+
                                 </div>
                             </div>
 

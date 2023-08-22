@@ -1250,10 +1250,37 @@ th {
 }
 
 .lib__book__details {
-    width: 235px;
-    margin: 10px;
+    width: 188px;
+    margin: 10px 30px 0 0;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.lib__book__details img {
+    width: 186px !important;
+}
+
+.lib__book__details p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.course__registration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.course__registration__card {
+    width: 32%;
+    height: 200px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
 }

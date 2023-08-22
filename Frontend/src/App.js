@@ -13,6 +13,7 @@ import HolidaysandTimeTable from './Views/Pages/HolidaysandTimeTable';
 import AttendanceTracking from './Views/Pages/AttendanceTracking';
 import StudentAndFacultyProfiles from './Views/Pages/StudentAndFacultyProfiles';
 import LibraryManagement from './Views/Pages/LibraryManagement';
+import CourseRegistration from './Views/Pages/CourseRegistration';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/AttendanceTracking" index element={<AttendanceTracking />} />
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
+        <Route path="/CourseRegistration" index element={<CourseRegistration />} />
         <Route path="/navLinks" index element={<NavLinks />} />
         <Route path="/footer" index element={<Footer />} />
       </Routes>

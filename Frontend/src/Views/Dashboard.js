@@ -117,14 +117,16 @@ function Dashboard() {
                 </div>
               </Link>
 
-              <div className="college__features">
-                <img
-                  src={CourseRegistration}
-                  alt="..."
-                  className="features__logo"
-                />
-                <p>Course Registration</p>
-              </div>
+              <Link to='/CourseRegistration'>
+                <div className="college__features">
+                  <img
+                    src={CourseRegistration}
+                    alt="..."
+                    className="features__logo"
+                  />
+                  <p>Course Registration</p>
+                </div>
+              </Link>
 
               <div className="college__features">
                 <img
