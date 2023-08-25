@@ -160,7 +160,7 @@ class Signup extends Component {
                         <div className="text-center">
                           <p>
                             Already Have An Account?  <a href="#!">
-                              <Link to="/">
+                              <Link to="/login">
                                 sign in
                               </Link>
                             </a>

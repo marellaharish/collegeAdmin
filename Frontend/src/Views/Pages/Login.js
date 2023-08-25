@@ -13,16 +13,44 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fName: "",
-      lName: "",
       email: "",
-      phoneNo: "",
       password: "",
-      confirmPassword: "",
     };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  // rest of your component logic
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    const { email, password } = this.state;
+    console.log(email, password);
+
+    await fetch("http://localhost:8000/login", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: "application/json",
+        'Access-Control-Allow-Origin': '*',
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    })
+      .then((res) => res.json(res)) // Corrected from res.JSON() to res.json()
+      .then((data) => {
+        console.log(data, "userRegister");
+        if (data.status == "ok") {
+          alert("Login Successful");
+          window.localStorage.setItem("token", data.data);
+          window.location.href = "./home";
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+
+  }
 
   render() {
 
@@ -36,13 +64,14 @@ class Login extends Component {
                   <div className="Form">
                     <img src={logo} className="logo" alt="logo" />
                     <div className="input-Data">
-                      <form action="POST">
+                      <form onSubmit={this.handleSubmit}>
                         <MDBInput
                           className="mb-4"
                           type="email"
                           id="form2Example1"
                           name=""
                           label="Email address"
+                          onChange={(e) => this.setState({ email: e.target.value })}
                         />
 
                         <MDBInput
@@ -51,6 +80,7 @@ class Login extends Component {
                           id="form2Example2"
                           label="Password"
                           name=""
+                          onChange={(e) => this.setState({ password: e.target.value })}
                         />
 
                         <MDBRow className="mb-4">

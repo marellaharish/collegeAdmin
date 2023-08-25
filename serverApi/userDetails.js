@@ -10,7 +10,7 @@ const UserDetailsSchema = new mongoose.Schema(
         confirmPassword: String,
     },
     {
-        collation: "UserInfo",
+        collection: "UserInfo",
     }
 );
 
