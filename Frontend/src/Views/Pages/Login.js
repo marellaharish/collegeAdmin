@@ -19,12 +19,12 @@ class Login extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleSubmit = async (e) => {
+  handleSubmit(e) {
     e.preventDefault();
     const { email, password } = this.state;
     console.log(email, password);
 
-    await fetch("http://localhost:8000/login", {
+    fetch("http://localhost:8000/login", {
       method: "POST",
       crossDomain: true,
       headers: {

@@ -4,7 +4,7 @@ import NavLinks from '../../Components/NavLinks/NavLinks'
 import { MDBContainer, MDBInput } from 'mdb-react-ui-kit'
 import Footer from '../../Components/Footer/Footer';
 import Select from 'react-select'
-import Avatar from '../../Components/Assets/Avatars/Avatar Image.png';
+import Avatar from '../../Components/Assets/Avatars/1.png';
 import ApexCharts from 'apexcharts'
 import RadialBarChart from "../../Components/component/RadialBarChart"
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';

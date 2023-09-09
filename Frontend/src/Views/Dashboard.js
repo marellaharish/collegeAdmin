@@ -60,7 +60,7 @@ class Dashboard extends Component {
           <div className="main__body">
             <div className="main__1">
               <MDBContainer fluid>
-                <ImageSlider />
+                {/* <ImageSlider /> */}
               </MDBContainer>
               <div className="college__details ">
                 <div className="w-100 head__features">
@@ -253,14 +253,16 @@ class Dashboard extends Component {
                   <p>Transport and Bus Service Management</p>
                 </div>
 
-                <div className="college__features">
-                  <img
-                    src={HelpandSupport}
-                    alt="..."
-                    className="features__logo"
-                  />
-                  <p>Help and Support</p>
-                </div>
+                <Link to='/HelpAndSupport'>
+                  <div className="college__features">
+                    <img
+                      src={HelpandSupport}
+                      alt="..."
+                      className="features__logo"
+                    />
+                    <p>Help and Support</p>
+                  </div>
+                </Link>
               </div>
             </div>
 

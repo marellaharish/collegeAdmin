@@ -1285,3 +1285,90 @@ th {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
 }
+
+.profiles__select {
+    width: 420px;
+    margin-top: 40px;
+}
+
+.profiles__select .card:hover {
+    /* border: 1px solid green !important; */
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    cursor: pointer;
+    color: var(--mdb-primary);
+}
+
+.profiles__select .card {
+    border-color: transparent !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profiles__select .card .card-body {
+    border: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profiles__select .card .card-body .card-text {
+    text-align: center;
+}
+
+.student__card__img {
+    width: 100px;
+}
+
+.profile__data {
+    width: 300px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.profile__data img {
+    width: 110px;
+    border-radius: 50%;
+    outline: 2px solid #ccc;
+    outline-offset: 3px;
+}
+
+.profile__data h5 {
+    text-transform: uppercase;
+}
+
+.profile__data p {
+    text-transform: capitalize;
+    font-size: 14px;
+    margin: 0;
+}
+
+.details__data {
+    text-align: center;
+
+}
+
+.page-link {
+    border: none !important;
+    color: #000 !important;
+}
+
+.page__nation {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.active>.page-link,
+.page-link.active {
+    background-color: #ececec !important;
+}

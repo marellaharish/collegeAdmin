@@ -1,17 +1,25 @@
 import React, { useState } from 'react';
 import {
-    MDBTabs,
-    MDBTabsItem,
-    MDBTabsLink,
-    MDBTabsContent,
-    MDBTabsPane,
-    MDBRow,
-    MDBCol
+    MDBCard,
+    MDBCardBody,
+    MDBCardTitle,
+    MDBCardText
 } from 'mdb-react-ui-kit';
+
+import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
+
 import NavLinks from '../../Components/NavLinks/NavLinks'
 import { MDBContainer, MDBInput } from 'mdb-react-ui-kit'
 import Footer from '../../Components/Footer/Footer';
-import Avatar from '../../Components/Assets/Avatars/Avatar Image.png';
+import Avatar from '../../Components/Assets/Avatars/1.png';
+import Avatar2 from '../../Components/Assets/Avatars/2.png';
+import Avatar3 from '../../Components/Assets/Avatars/3.png';
+import Avatar4 from '../../Components/Assets/Avatars/4.png';
+import Avatar5 from '../../Components/Assets/Avatars/5.png';
+import Avatar6 from '../../Components/Assets/Avatars/6.png';
+import StudentPerson from '../../Components/Assets/student-person-part-2-svgrepo-com.svg';
+import TeacherPerson from '../../Components/Assets/teacher-svgrepo-com.svg';
+import FacultyProfile from '../../Components/Assets/id-card-svgrepo-com.svg';
 import { MDBBadge, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import {
     MDBBreadcrumb,
@@ -23,35 +31,6 @@ import {
     MDBIcon
 } from 'mdb-react-ui-kit';
 function StudentAndFacultyProfiles() {
-    const [verticalActive, setVerticalActive] = useState('tab1');
-
-    const handleVerticalClick = (value: string) => {
-        if (value === verticalActive) {
-            return;
-        }
-
-        setVerticalActive(value);
-    };
-    const [verticalActive2, setVerticalActive2] = useState('tab3');
-
-    const handleVerticalClick2 = (value: string) => {
-        if (value === verticalActive2) {
-            return;
-        }
-
-        setVerticalActive2(value);
-    };
-
-    const [customActive, setCustomActive] = useState('tab1');
-
-    const handleCustomClick = (value: string) => {
-        if (value === customActive) {
-            return;
-        }
-
-        setCustomActive(value);
-    };
-
 
     return (
         <React.Fragment>
@@ -82,714 +61,285 @@ function StudentAndFacultyProfiles() {
                         </div>
                     </MDBContainer>
 
-                    <MDBContainer fluid className='mb-5 bg-white mt-3'>
-                        <MDBTabs className='mb-3'>
-                            <MDBTabsItem>
-                                <MDBTabsLink onClick={() => handleCustomClick('tab1')} active={customActive === 'tab1'}>
-                                    Faculty Profiles
-                                </MDBTabsLink>
-                            </MDBTabsItem>
-                            <MDBTabsItem>
-                                <MDBTabsLink onClick={() => handleCustomClick('tab2')} active={customActive === 'tab2'}>
-                                    Students Profiles
-                                </MDBTabsLink>
-                            </MDBTabsItem>
-                        </MDBTabs>
+                    <MDBContainer className='mb-5 bg-white mt-3'>
 
-                        <MDBTabsContent>
+                        <div className='text-center'>
+                            <h2 className='fw-bold'>Select Profile To See</h2>
+                            <p className='w-50 m-auto text-secondary'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga nulla quaerat, esse accusantium dignissimos praesentium voluptatum atque fugit sequi pariatur tempore animi sit? Nulla blanditiis quia tempora alias nihil.
+                            </p>
+                        </div>
+                        <div className='d-flex align-items-center justify-content-between'>
+                            <div className='profiles__select'>
+                                <MDBCard>
+                                    <MDBCardBody>
+                                        <img src={StudentPerson} className='student__card__img' />
+                                        <MDBCardTitle className='mt-2'>Student Profiles</MDBCardTitle>
+                                        <MDBCardText>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </MDBCardText>
+                                    </MDBCardBody>
+                                </MDBCard>
+                            </div>
+                            <div className='profiles__select'>
+                                <MDBCard>
+                                    <MDBCardBody>
+                                        <img src={TeacherPerson} className='student__card__img' />
+                                        <MDBCardTitle>Faculty Profiles</MDBCardTitle>
+                                        <MDBCardText>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </MDBCardText>
+                                    </MDBCardBody>
+                                </MDBCard>
+                            </div>
+                            <div className='profiles__select'>
+                                <MDBCard>
+                                    <MDBCardBody>
+                                        <img src={FacultyProfile} className='student__card__img' />
+                                        <MDBCardTitle>Staff Profiles</MDBCardTitle>
+                                        <MDBCardText>
+                                            Some quick example text to build on the card title and make up the bulk of the card's content.
+                                        </MDBCardText>
+                                    </MDBCardBody>
+                                </MDBCard>
+                            </div>
+                        </div>
 
-                            <MDBTabsPane show={customActive === 'tab1'}>
-                                <div className='w-100 Examination__Results my-4'>
-                                    <h3 className='text-center fw-bold'>Faculty Profiles</h3>
+                    </MDBContainer>
+
+                    <MDBContainer>
+                        <div className='text-center mb-4'>
+                            <h2 className='fw-bold'>Faculty Profiles</h2>
+                            <p className='w-50 m-auto text-secondary'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga nulla quaerat,
+                            </p>
+                        </div>
+                        <div className='d-flex align-items-center justify-content-between flex-wrap'>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar} />
                                 </div>
-                                <MDBRow>
-                                    <MDBCol size='2'>
-                                        <MDBTabs className='flex-column text-center'>
-                                            <MDBTabsItem>
-                                                <MDBTabsLink onClick={() => handleVerticalClick('tab1')} active={verticalActive === 'tab1'}>
-                                                    Faculty List
-                                                </MDBTabsLink>
-                                            </MDBTabsItem>
-                                            <MDBTabsItem>
-                                                <MDBTabsLink onClick={() => handleVerticalClick('tab2')} active={verticalActive === 'tab2'}>
-                                                    Faculty Profile
-                                                </MDBTabsLink>
-                                            </MDBTabsItem>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department (CSE)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
-                                        </MDBTabs>
-                                    </MDBCol>
-                                    <MDBCol size='10'>
-                                        <MDBTabsContent>
-                                            <MDBTabsPane show={verticalActive === 'tab1'}>
-                                                <MDBTable align='middle' hover>
-                                                    <MDBTableHead>
-                                                        <tr>
-                                                            <th scope='col'>Name</th>
-                                                            <th scope='col'>Qualification</th>
-                                                            <th scope='col'>Status</th>
-                                                            <th scope='col'>Designation</th>
-                                                            <th scope='col'>Department</th>
-                                                        </tr>
-                                                    </MDBTableHead>
-                                                    <MDBTableBody>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/8.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '50px', height: '50px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Dr. Vatsala G</p>
-                                                                        <p className='text-muted mb-0'>john.doe@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>	PhD</p>
-                                                                <p className='text-muted mb-0'>IT department</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='success' pill>
-                                                                    Active
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Principal</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/6.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/2.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/1.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/10.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/12.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-
-                                                    </MDBTableBody>
-                                                </MDBTable>
-                                            </MDBTabsPane>
-                                            <MDBTabsPane show={verticalActive === 'tab2'}>
-                                                <div className='Faculty__Profiles'>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </MDBTabsPane>
-                                        </MDBTabsContent>
-                                    </MDBCol>
-                                </MDBRow>
-                            </MDBTabsPane>
-
-
-
-
-
-
-
-                            <MDBTabsPane show={customActive === 'tab2'}>
-                                <div className='w-100 Examination__Results my-4'>
-                                    <h3 className='text-center fw-bold'>Students Profiles</h3>
                                 </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar2} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
+                                </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar5} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
+                                </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar4} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
-                                <MDBRow>
-                                    <MDBCol size='2'>
-                                        <MDBTabs className='flex-column text-center'>
-                                            <MDBTabsItem>
-                                                <MDBTabsLink onClick={() => handleVerticalClick2('tab3')} active={verticalActive2 === 'tab3'}>
-                                                    Student List
-                                                </MDBTabsLink>
-                                            </MDBTabsItem>
-                                            <MDBTabsItem>
-                                                <MDBTabsLink onClick={() => handleVerticalClick2('tab4')} active={verticalActive2 === 'tab4'}>
-                                                    Students Profile
-                                                </MDBTabsLink>
-                                            </MDBTabsItem>
+                                </div>
+                                <MDBBtn outline rounded >
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department (CSE)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
-                                        </MDBTabs>
-                                    </MDBCol>
-                                    <MDBCol size='10'>
-                                        <MDBTabsContent>
-                                            <MDBTabsPane show={verticalActive2 === 'tab3'}>
-                                                <MDBTable align='middle' hover>
-                                                    <MDBTableHead>
-                                                        <tr>
-                                                            <th scope='col'>Name</th>
-                                                            <th scope='col'>Qualification</th>
-                                                            <th scope='col'>Status</th>
-                                                            <th scope='col'>Designation</th>
-                                                            <th scope='col'>Department</th>
-                                                        </tr>
-                                                    </MDBTableHead>
-                                                    <MDBTableBody>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/8.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '50px', height: '50px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Dr. Vatsala G</p>
-                                                                        <p className='text-muted mb-0'>john.doe@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>	PhD</p>
-                                                                <p className='text-muted mb-0'>IT department</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='success' pill>
-                                                                    Active
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Principal</td>
-                                                            <td>-</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/6.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/2.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/1.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/10.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <div className='d-flex align-items-center'>
-                                                                    <img
-                                                                        src='https://mdbootstrap.com/img/new/avatars/12.jpg'
-                                                                        alt=''
-                                                                        style={{ width: '45px', height: '45px' }}
-                                                                        className='rounded-circle'
-                                                                    />
-                                                                    <div className='ms-3'>
-                                                                        <p className='fw-bold mb-1'>Prof. B S Jayarama</p>
-                                                                        <p className='text-muted mb-0'>alex.ray@gmail.com</p>
-                                                                    </div>
-                                                                </div>
-                                                            </td>
-                                                            <td>
-                                                                <p className='fw-normal mb-1'>MCom, MBA, MPhil</p>
-                                                                <p className='text-muted mb-0'>Finance</p>
-                                                            </td>
-                                                            <td>
-                                                                <MDBBadge color='primary' pill>
-                                                                    Onboarding
-                                                                </MDBBadge>
-                                                            </td>
-                                                            <td>Professor & Head, Vice Principal</td>
-                                                            <td>
-                                                                Commerce
-                                                            </td>
-                                                        </tr>
+                                </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar2} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
-                                                    </MDBTableBody>
-                                                </MDBTable>
-                                            </MDBTabsPane>
-                                            <MDBTabsPane show={verticalActive2 === 'tab4'}>
-                                                <div className='Faculty__Profiles'>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div className='profiles'>
-                                                        <img src={Avatar} className='me-3' />
-                                                        <div className='me-2'>
-                                                            <span>Marella Harish</span>
-                                                            <p className='mb-0'>CSE HOD</p>
-                                                            <p>
-                                                                Qualification: MTech With Docratic
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar5} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
-                                                </div>
-                                            </MDBTabsPane>
-                                        </MDBTabsContent>
-                                    </MDBCol>
-                                </MDBRow></MDBTabsPane>
-                        </MDBTabsContent>
+                                </div>
+                                <MDBBtn outline rounded>
+                                    View Profile
+                                </MDBBtn>
+                            </div>
+                            <div className='profile__data'>
+                                <div>
+                                    <img src={Avatar4} />
+                                </div>
+                                <div className='details__data'>
+                                    <h5 className='fw-bold'>Harish Marella</h5>
+                                    <p>Head Of The Department(HOD)</p>
+                                    <p className='fw-bold'>
+                                        EXPERIENCE
+                                    </p>
+                                    <p>
+                                        32.3 years of experience
+                                    </p>
+                                    <p className='fw-bold'>
+                                        CAMPUS
+                                    </p>
+                                    <p>
+                                        College of Eng & Tech - Chennai
+                                    </p>
 
+                                </div>
+                                <MDBBtn outline rounded >
+                                    View Profile
+                                </MDBBtn>
+                            </div>
 
-
-
+                        </div>
+                        <nav aria-label='...' className='page__nation'>
+                            <MDBPagination circle className='mb-0'>
+                                <MDBPaginationItem>
+                                    <MDBPaginationLink href='#' tabIndex={-1} aria-disabled='true'>
+                                        Previous
+                                    </MDBPaginationLink>
+                                </MDBPaginationItem>
+                                <MDBPaginationItem active>
+                                    <MDBPaginationLink href='#'>1</MDBPaginationLink>
+                                </MDBPaginationItem>
+                                <MDBPaginationItem >
+                                    <MDBPaginationLink href='#'>
+                                        2 <span className='visually-hidden'>(current)</span>
+                                    </MDBPaginationLink>
+                                </MDBPaginationItem>
+                                <MDBPaginationItem>
+                                    <MDBPaginationLink href='#'>3</MDBPaginationLink>
+                                </MDBPaginationItem>
+                                <MDBPaginationItem>
+                                    <MDBPaginationLink href='#'>Next</MDBPaginationLink>
+                                </MDBPaginationItem>
+                            </MDBPagination>
+                        </nav>
                     </MDBContainer>
                     <Footer />
                 </div>

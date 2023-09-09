@@ -29,7 +29,7 @@ app.post("/signup", async (req, res) => {
     try {
         const oldUser = await User.findOne({ email });
         if (oldUser) {
-            return res.send({ error: "User Already Exist" });
+            return res.json({ error: "User Already Exist" });
         }
         await User.create({
             fName,
@@ -52,10 +52,9 @@ app.post("/signup", async (req, res) => {
 
 app.post("/login", async (req, res) => {
     const { email, password } = req.body;
-
     const user = await User.findOne({ email });
     if (!user) {
-        return res.send({ error: "User Not Exist Please Register" });
+        return res.json({ error: "User Not Exist Please Register" });
     }
     if (await bcrypt.compare(password, user.password)) {
         const token = jwt.sign({ email: user.email }, JWT_SWCRET);
@@ -66,7 +65,7 @@ app.post("/login", async (req, res) => {
             return res.json({ error: "Error Signing" });
         }
     }
-    res.json({ status: "Error", error: "Invalid User Name Or Password" })
+    res.json({ status: "error", error: "Invalid User Name Or Password" })
 });
 
 

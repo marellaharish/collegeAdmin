@@ -14,6 +14,8 @@ import AttendanceTracking from './Views/Pages/AttendanceTracking';
 import StudentAndFacultyProfiles from './Views/Pages/StudentAndFacultyProfiles';
 import LibraryManagement from './Views/Pages/LibraryManagement';
 import CourseRegistration from './Views/Pages/CourseRegistration';
+import LandingPage from './Views/LandingPage';
+import HelpAndSupport from './Views/Pages/HelpAndSupport';
 
 
 
@@ -26,6 +28,7 @@ function App() {
         <Route path="/Login" index element={<Login />} />
         <Route path="/signup" index element={<Signup />} />
         <Route path="/main" index element={<HomePage />} />
+        <Route path="/LandingPage" index element={<LandingPage />} />
         <Route path="/home" index element={<Dashboard />} />
         <Route path="/collegeAdmissions" index element={<CollegeAdmissions />} />
         <Route path="/resultsManagement" index element={<ResultsManagement />} />
@@ -35,6 +38,7 @@ function App() {
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
+        <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />
         <Route path="/footer" index element={<Footer />} />
       </Routes>

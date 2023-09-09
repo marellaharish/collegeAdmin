@@ -1,0 +1,11 @@
+video {
+    bottom: 1px;
+    height: 100%;
+    min-height: 56.25vw;
+    min-width: 100%;
+    position: absolute;
+    right: 50%;
+    -webkit-transform: translate(50%);
+    transform: translate(50%);
+    width: 177.77777778vh;
+}

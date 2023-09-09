@@ -9,6 +9,7 @@ import outlook from "../../Components/Assets/outlook-svgrepo-com.svg";
 import MadeWithLove from 'react-made-with-love';
 import signup from "../../Components/Assets/signup.jpg";
 import { Link, useNavigate } from 'react-router-dom';
+import '../../Components/Css/Responsive.css';
 
 import {
   MDBValidation,
