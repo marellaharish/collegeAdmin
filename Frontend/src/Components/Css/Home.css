@@ -1372,3 +1372,12 @@ th {
 .page-link.active {
     background-color: #ececec !important;
 }
+
+.Faculty__Bg {
+    background-image: url(../Assets/FacultyDetailsBg.jpg);
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+}

@@ -16,6 +16,7 @@ import LibraryManagement from './Views/Pages/LibraryManagement';
 import CourseRegistration from './Views/Pages/CourseRegistration';
 import LandingPage from './Views/LandingPage';
 import HelpAndSupport from './Views/Pages/HelpAndSupport';
+import FacultyViewProfile from './Views/Pages/FacultyViewProfile';
 
 
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/AttendanceTracking" index element={<AttendanceTracking />} />
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
+        <Route path="/FacultyViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
         <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />

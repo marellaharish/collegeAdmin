@@ -3,11 +3,12 @@ import {
     MDBCard,
     MDBCardBody,
     MDBCardTitle,
-    MDBCardText
+    MDBCardText,
+    MDBRow,
+    MDBCol
 } from 'mdb-react-ui-kit';
-
+import Select from 'react-select'
 import { MDBPagination, MDBPaginationItem, MDBPaginationLink } from 'mdb-react-ui-kit';
-
 import NavLinks from '../../Components/NavLinks/NavLinks'
 import { MDBContainer, MDBInput } from 'mdb-react-ui-kit'
 import Footer from '../../Components/Footer/Footer';
@@ -21,6 +22,8 @@ import StudentPerson from '../../Components/Assets/student-person-part-2-svgrepo
 import TeacherPerson from '../../Components/Assets/teacher-svgrepo-com.svg';
 import FacultyProfile from '../../Components/Assets/id-card-svgrepo-com.svg';
 import { MDBBadge, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
+import FacultyViewProfile from './FacultyViewProfile';
+
 import {
     MDBBreadcrumb,
     MDBBreadcrumbItem,
@@ -30,7 +33,19 @@ import {
     MDBInputGroup,
     MDBIcon
 } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 function StudentAndFacultyProfiles() {
+
+    const options = [
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' },
+        { value: '18541A0..', label: '18541A0..' }
+    ]
 
     return (
         <React.Fragment>
@@ -62,7 +77,6 @@ function StudentAndFacultyProfiles() {
                     </MDBContainer>
 
                     <MDBContainer className='mb-5 bg-white mt-3'>
-
                         <div className='text-center'>
                             <h2 className='fw-bold'>Select Profile To See</h2>
                             <p className='w-50 m-auto text-secondary'>
@@ -114,6 +128,16 @@ function StudentAndFacultyProfiles() {
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fuga nulla quaerat,
                             </p>
                         </div>
+                        <div className='d-flex justify-content-evenly'>
+                            <Select placeholder="Search By Campus" className='w-20' options={options} />
+                            <Select placeholder="Search By Deptartment" className='w-20' options={options} />
+                            <Select placeholder="Search by Designation" className='w-20' options={options} />
+                        </div>
+                        <div className='d-flex justify-content-evenly mt-3'>
+                            <Select placeholder="Faculty Name" className='w-20' options={options} />
+                            <Select placeholder="Search By Faculty Type" className='w-20' options={options} />
+                            <MDBBtn outline className='w-20' >Search <MDBIcon fas icon="search" className='ms-3' /></MDBBtn>
+                        </div>
                         <div className='d-flex align-items-center justify-content-between flex-wrap'>
                             <div className='profile__data'>
                                 <div>
@@ -136,9 +160,11 @@ function StudentAndFacultyProfiles() {
                                     </p>
 
                                 </div>
-                                <MDBBtn outline rounded>
-                                    View Profile
-                                </MDBBtn>
+                                <Link to="/FacultyViewProfile" >
+                                    <MDBBtn outline rounded>
+                                        View Profile
+                                    </MDBBtn>
+                                </Link>
                             </div>
                             <div className='profile__data'>
                                 <div>
