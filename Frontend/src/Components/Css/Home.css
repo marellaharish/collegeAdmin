@@ -465,7 +465,7 @@ p {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     scrollbar-width: none;
-    background-image: url(../Assets/bgPng.png);
+    background: url(../Assets/bgPng.png), rgb(247, 250, 255);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1374,10 +1374,48 @@ th {
 }
 
 .Faculty__Bg {
-    background-image: url(../Assets/FacultyDetailsBg.jpg);
+    background-image: url(../Assets/faculty-default-cover-image-placeholder-.png);
     width: 100%;
-    height: 300px;
+    height: 360px;
     background-repeat: no-repeat;
     background-size: 100%;
     object-fit: cover;
+}
+
+.Faculty__Profiles__bg {
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    background-color: #ffffff;
+    position: relative;
+    top: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+
+.Faculty__image {
+    width: 250px;
+    margin-left: 70px;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.student__image {
+    width: 250px;
+    height: 400px;
+    margin-left: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.h-80 {
+    height: 60% !important;
+}
+
+.Graduate__icons {
+    width: 20px;
 }

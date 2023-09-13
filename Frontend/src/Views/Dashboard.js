@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import NavLinks from "../Components/NavLinks/NavLinks";
 import Footer from "../Components/Footer/Footer";
-import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
+import { MDBBtn, MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import Slide1 from "../Components/Assets/pexels-pixabay-122429.jpg";
 import ImageSlider from "../Components/component/ImageSlider";
 import CollegeAdmissions from "../Components/Assets/college-svgrepo-com.svg";
@@ -30,6 +30,13 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import MultipleImageSlider from "../Components/component/MultipleImageSlider";
 class Dashboard extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      userData: "",
+
+    }
+  }
 
   componentDidMount() {
     fetch("http://localhost:8000/home", {
@@ -42,13 +49,21 @@ class Dashboard extends Component {
       },
       body: JSON.stringify({
         token: window.localStorage.getItem('token'),
+
       }),
     })
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "userData");
       })
+    console.log(JSON.parse(sessionStorage.getItem("userinfo")));
+    this.setState({ userData: "userinfo" })
+  }
 
+  logout = () => {
+    window.localStorage.clear();
+    sessionStorage.clear();
+    window.location.href = "./login";
   }
 
   render() {
@@ -60,6 +75,11 @@ class Dashboard extends Component {
           <div className="main__body">
             <div className="main__1">
               <MDBContainer fluid>
+                <h1 className="fw-bold">
+                  {/* Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName} */}
+
+                  <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
+                </h1>
                 {/* <ImageSlider /> */}
               </MDBContainer>
               <div className="college__details ">

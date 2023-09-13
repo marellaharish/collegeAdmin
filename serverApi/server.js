@@ -59,7 +59,7 @@ app.post("/login", async (req, res) => {
     if (await bcrypt.compare(password, user.password)) {
         const token = jwt.sign({ email: user.email }, JWT_SWCRET);
         if (res.status(201)) {
-            return res.json({ status: "ok", data: token });
+            return res.json({ status: "ok", data: token, userinfo: user });
         }
         else {
             return res.json({ error: "Error Signing" });
@@ -73,6 +73,7 @@ app.post("/home", async (req, res) => {
     const { token } = req.body;
     try {
         const user = jwt.verify(token, JWT_SWCRET);
+        console.log(user);
         const userEmail = user.email;
         user.findOne({ email: userEmail }).then((data) => {
             res.send({ status: "ok", data: data });

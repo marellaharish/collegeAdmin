@@ -5,6 +5,7 @@ import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
 import './Components/Fonts/Plutur.ttf';
 import './Components/Fonts/Neptune.ttf';
 

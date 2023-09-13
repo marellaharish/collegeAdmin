@@ -40,9 +40,11 @@ class Login extends Component {
       .then((res) => res.json(res)) // Corrected from res.JSON() to res.json()
       .then((data) => {
         console.log(data, "userRegister");
+        sessionStorage.setItem("userinfo", JSON.stringify(data.userinfo));
         if (data.status == "ok") {
           alert("Login Successful");
           window.localStorage.setItem("token", data.data);
+          window.localStorage.setItem("loggedIn", true);
           window.location.href = "./home";
         }
       })

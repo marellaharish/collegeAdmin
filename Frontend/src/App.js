@@ -17,15 +17,19 @@ import CourseRegistration from './Views/Pages/CourseRegistration';
 import LandingPage from './Views/LandingPage';
 import HelpAndSupport from './Views/Pages/HelpAndSupport';
 import FacultyViewProfile from './Views/Pages/FacultyViewProfile';
+import StudentViewProfile from './Views/Pages/StudentViewProfile';
 
 
 
 function App() {
+
+  const isLoggedIn = window.localStorage.getItem('loggedIn');
+
   return (
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" index element={<Signup />} />
+        <Route path="/" index element={isLoggedIn == "true" ? <Dashboard /> : <Login />} />
         <Route path="/Login" index element={<Login />} />
         <Route path="/signup" index element={<Signup />} />
         <Route path="/main" index element={<HomePage />} />
@@ -39,6 +43,7 @@ function App() {
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
         <Route path="/FacultyViewProfile" index element={<FacultyViewProfile />} />
+        <Route path="/StudentViewProfile" index element={<StudentViewProfile />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
         <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />
