@@ -57,7 +57,9 @@ app.post("/login", async (req, res) => {
         return res.json({ error: "User Not Exist Please Register" });
     }
     if (await bcrypt.compare(password, user.password)) {
-        const token = jwt.sign({ email: user.email }, JWT_SWCRET);
+        const token = jwt.sign({ email: user.email }, JWT_SWCRET, {
+            expiresIn: 10,
+        });
         if (res.status(201)) {
             return res.json({ status: "ok", data: token, userinfo: user });
         }
@@ -65,7 +67,7 @@ app.post("/login", async (req, res) => {
             return res.json({ error: "Error Signing" });
         }
     }
-    res.json({ status: "error", error: "Invalid User Name Or Password" })
+    res.json({ status: "error", error: "Invalid Password" })
 });
 
 

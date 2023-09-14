@@ -45,6 +45,10 @@ body {
     display: none; */
 }
 
+.navbar-brand img {
+    mix-blend-mode: multiply;
+}
+
 .loginPoster {
     width: 100%;
     height: 100vh;
@@ -491,7 +495,7 @@ p {
 
 .carousel-inner {
     width: auto;
-    height: 65vh;
+    height: calc(100vh - 130px);
 }
 
 .college__features {
@@ -697,18 +701,19 @@ p {
     font-weight: 600 !important;
     margin-top: 15px;
     font-family: "Poppins", sans-serif;
+
 }
 
 .about__title {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .AboutBanner__img {
     border-radius: 50%;
-    margin-right: 10rem;
-    width: 300px;
+    margin-left: 20rem;
+    width: 250px;
     height: auto;
 }
 
@@ -773,10 +778,10 @@ p {
     z-index: 1;
 }
 
-/* input::placeholder {
+.form__full__box input::placeholder {
     color: #ffffff !important;
     opacity: 1;
-} */
+}
 
 .form__full__box .register-form .form-group select option {
     background: #5958a0;
@@ -812,7 +817,7 @@ p {
 }
 
 .about_content {
-    padding-top: 200px;
+    padding-top: 150px;
     padding-left: 36px;
 }
 
@@ -854,31 +859,34 @@ p {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-
-
-
+    justify-content: flex-start;
     margin-top: 25px;
+    margin: auto;
 }
 
 .branches {
-    width: 400px;
-    height: 220px;
-    margin: 15px;
+    width: 380px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
     transition: all 0.2s;
+    padding: 15px;
+}
+
+.branches p {
+    font-size: 12px;
 }
 
 .branches__img {
-    width: 100px;
-    margin-left: 15px;
+    width: 85px;
 }
 
 .calender__img {
-    width: 35px;
+    width: 25px;
 }
 
 .branches__btn {
@@ -1096,9 +1104,9 @@ th {
     color: #ffffff !important;
 }
 
-.timeTanle__branch:hover {
+/* .timeTanle__branch:hover {
     color: #ffffff !important;
-}
+} */
 
 .Academic__Calendar h2 {
     font-weight: 600 !important;
@@ -1418,4 +1426,21 @@ th {
 
 .Graduate__icons {
     width: 20px;
+}
+
+
+.slider__image {
+    width: 80% !important;
+    height: 100% !important;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 50% !important;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
 }

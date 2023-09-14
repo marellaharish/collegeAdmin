@@ -64,6 +64,7 @@ class Dashboard extends Component {
     window.localStorage.clear();
     sessionStorage.clear();
     window.location.href = "./login";
+    window.localStorage.removeItem("userinfo");
   }
 
   render() {
@@ -71,16 +72,15 @@ class Dashboard extends Component {
       <React.Fragment>
         <>
           <NavLinks />
-
+          {/* 
           <div className="main__body">
             <div className="main__1">
               <MDBContainer fluid>
                 <h1 className="fw-bold">
-                  {/* Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName} */}
+                  Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
 
                   <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
                 </h1>
-                {/* <ImageSlider /> */}
               </MDBContainer>
               <div className="college__details ">
                 <div className="w-100 head__features">
@@ -338,7 +338,67 @@ class Dashboard extends Component {
               </MDBRow>
             </div>
             <Footer />
+          </div> */}
+
+          <ImageSlider />
+
+
+          <div className="main2">
+            <div className="main-head">
+              <h1>
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              </h1>
+            </div>
+            <div className="heading">
+              <img src={Slide1} className="img-head" />
+            </div>
+            <div className="image-text">
+              <p className="fs-5 mb-0">Top Quality And Learning Experience</p>
+            </div>
+            <div className="counter-text ">
+              <h1>
+                <CountUp end={1985} separator="" duration={3.75} />
+                <p>Established</p>
+              </h1>
+              <h1>
+                <CountUp end={250} separator="" duration={3.75} suffix="+" />
+                <p>Acres Green Campus</p>
+              </h1>
+              <h1>
+                <CountUp end={50000} separator="," duration={3.75} suffix="+" />
+                <p>Students</p>
+              </h1>
+            </div>
           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </>
       </React.Fragment >
     );

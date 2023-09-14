@@ -241,9 +241,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -282,9 +282,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Electronics & Communication Engg.
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -323,9 +323,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Electrical & Electronics Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -364,9 +364,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -405,9 +405,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -446,9 +446,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -487,9 +487,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -528,9 +528,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -560,7 +560,7 @@ function CollegeAdmissions() {
                                     </MDBRow>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center justify-content-center">
+                            <div className="d-flex align-items-center ">
                                 <MDBBtn outline className="me-3 branches__btn">
                                     ELIGIBILITY CRITERIA
                                 </MDBBtn>
@@ -585,9 +585,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -626,9 +626,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Electronics & Communication Engg.
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -667,9 +667,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Electrical & Electronics Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -708,9 +708,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">
@@ -749,9 +749,9 @@ function CollegeAdmissions() {
                                             size={8}
                                             className="d-flex align-items-center flex-column mt-2"
                                         >
-                                            <h4 className="text-center">
+                                            <h6 className="text-left">
                                                 Computer Science Engineering
-                                            </h4>
+                                            </h6>
                                             <p>B.Tech</p>
                                         </MDBCol>
                                         <MDBCol size={6} className="d-flex align-items-center">

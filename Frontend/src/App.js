@@ -43,7 +43,7 @@ function App() {
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
         <Route path="/FacultyViewProfile" index element={<FacultyViewProfile />} />
-        <Route path="/StudentViewProfile" index element={<StudentViewProfile />} />
+        <Route path="/StudentViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
         <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />
