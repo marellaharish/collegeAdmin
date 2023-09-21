@@ -23,7 +23,7 @@ function ImageSlider() {
                 src='https://mdbootstrap.com/img/new/slides/032.jpg'
                 alt='...'
             >
-                <h5>First slide label</h5>
+                <h5>Second slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </MDBCarouselItem>
             <MDBCarouselItem
@@ -32,7 +32,7 @@ function ImageSlider() {
                 src='https://mdbootstrap.com/img/new/slides/071.jpg'
                 alt='...'
             >
-                <h5>First slide label</h5>
+                <h5>Third slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </MDBCarouselItem>
             <MDBCarouselItem
@@ -41,7 +41,7 @@ function ImageSlider() {
                 src='https://mdbootstrap.com/img/new/slides/038.jpg'
                 alt='...'
             >
-                <h5>First slide label</h5>
+                <h5>Forth slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </MDBCarouselItem>
             <MDBCarouselItem
@@ -50,7 +50,7 @@ function ImageSlider() {
                 src='https://mdbootstrap.com/img/new/slides/034.jpg'
                 alt='...'
             >
-                <h5>First slide label</h5>
+                <h5>Fifth slide label</h5>
                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </MDBCarouselItem>
         </MDBCarousel>

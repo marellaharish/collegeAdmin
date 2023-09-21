@@ -11,6 +11,10 @@
     scroll-behavior: auto !important;
 }
 
+:root {
+    --mdb-white: #fff !important;
+}
+
 body {
     width: 100%;
     overflow-x: hidden;
@@ -192,24 +196,24 @@ i {
     height: 100vh;
 }
 
-/* .carousel-caption {
-    position: absolute;
-    color: #fff;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    bottom: 25%;
-    right: 0px;
-    transform: translate(-50%, -50%);
-    background-color: #00000069;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
-    width: 70%;
-    height: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+.carousel-caption {
+    background-color: #ffffff9a;
+    width: 50%;
+    margin: auto;
+    color: #000 !important;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+}
+
+.carousel-caption h5 {
+    font-size: 4rem !important;
+    font-weight: 600;
+}
+
+.carousel-caption p {
+    font-size: 1rem !important;
+    font-weight: 600;
+}
 
 .carousel-item img {
     width: 100%;
@@ -221,7 +225,7 @@ i {
 
 .main2 {
     width: 100%;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 90px);
     background: url(../Assets/bgPng.png), rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -236,11 +240,13 @@ i {
     margin-top: 15px;
     object-fit: cover;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .heading:hover {
-    scale: 1.03;
-    width: 49%;
+    /* scale: 1.03; */
+    width: 40%;
+
 }
 
 .main-head {
@@ -445,7 +451,7 @@ p {
 
 .main__body {
     width: 100%;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 90px);
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -461,7 +467,7 @@ p {
 
 .main__bodySub {
     width: 100%;
-    height: calc(100vh - 145px);
+    height: calc(100vh - 90px);
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -1443,4 +1449,24 @@ th {
     padding-bottom: 1.25rem;
     color: #fff;
     text-align: center;
+}
+
+.circle__div {
+    width: 50%;
+}
+
+.dropdown-menu {
+    border-radius: 8px !important;
+    background-color: rgb(243, 243, 243) !important;
+    border: none !important;
+    min-width: 200px !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    padding: 0 !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:active,
+.dropdown-item:hover {
+    color: var(--mdb-white) !important;
+    background-color: var(--mdb-primary) !important;
 }

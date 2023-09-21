@@ -57,35 +57,131 @@ function NavLinks(props) {
                                         Home
                                     </MDBNavbarLink>
                                 </MDBNavbarItem>
+
+
+                                <MDBNavbarItem>
+                                    <MDBDropdown>
+                                        <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                            About Us
+                                        </MDBDropdownToggle>
+                                        <MDBDropdownMenu>
+                                            <MDBDropdownItem link>About SSIET</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Chairman</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Secretary</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Principal</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Vision & Mission</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Core Values</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Careers</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Contact Us</MDBDropdownItem>
+                                        </MDBDropdownMenu>
+                                    </MDBDropdown>
+                                </MDBNavbarItem>
+
                                 <MDBNavbarItem>
                                     <MDBNavbarLink>
-                                        About College
+                                        Addmission
                                     </MDBNavbarLink>
                                 </MDBNavbarItem>
+
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Addmission</MDBNavbarLink>
+                                    <MDBDropdown>
+                                        <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                            Departments
+                                        </MDBDropdownToggle>
+                                        <MDBDropdownMenu>
+                                            <MDBDropdownItem link>Department of Civil Engg.</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Department of EEE</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Department of Mech</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Department of ECE</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Department of CSE</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Dept of CSE (IoT)</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Dept of CSE (Cybersecurity)</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Dept of CSE (AI & DS)</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Dept of CSE (AI & ML)</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Department of MBA</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Freshman Engg. Dept.</MDBDropdownItem>
+                                        </MDBDropdownMenu>
+                                    </MDBDropdown>
+                                </MDBNavbarItem>
+
+
+                                <MDBNavbarItem>
+                                    <MDBNavbarLink href='#'>Campus Life</MDBNavbarLink>
                                 </MDBNavbarItem>
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Academics</MDBNavbarLink>
+                                    <MDBDropdown>
+                                        <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                            Information
+                                        </MDBDropdownToggle>
+                                        <MDBDropdownMenu>
+                                            <MDBDropdownItem link>AICTE</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Grievance Cell</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>NIRF</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>IQAC</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Academic Calendars</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Mandatory Disclosure</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>New-Gen IEDC</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Exam Cell</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>NSS</MDBDropdownItem>
+                                        </MDBDropdownMenu>
+                                    </MDBDropdown>
                                 </MDBNavbarItem>
-                                <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Colleges</MDBNavbarLink>
-                                </MDBNavbarItem>
-                                <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Research</MDBNavbarLink>
-                                </MDBNavbarItem>
+
+
                                 <MDBNavbarItem>
                                     <MDBNavbarLink href='#'>Placements</MDBNavbarLink>
                                 </MDBNavbarItem>
+
                                 <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>R&D</MDBNavbarLink>
+                                    <MDBDropdown>
+                                        <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                            Facilities (P&D)
+                                        </MDBDropdownToggle>
+                                        <MDBDropdownMenu>
+                                            <MDBDropdownItem link>Library</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Campus infra Awards </MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>The Data Center</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Physical Education</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Hostels</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Transport</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Cafeteria</MDBDropdownItem>
+                                            <hr className="border my-1" />
+                                            <MDBDropdownItem link>Other Campus Amenities</MDBDropdownItem>
+                                        </MDBDropdownMenu>
+                                    </MDBDropdown>
                                 </MDBNavbarItem>
-                                <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Faculties</MDBNavbarLink>
-                                </MDBNavbarItem>
-                                <MDBNavbarItem>
-                                    <MDBNavbarLink href='#'>Get An Addmission</MDBNavbarLink>
-                                </MDBNavbarItem>
+
                             </MDBNavbarNav>
                             <MDBInputGroup tag="form" className='d-flex w-auto  rounded-pill'>
                                 <input className='form-control ' placeholder="Type To Search" aria-label="Search" type='Search' />
