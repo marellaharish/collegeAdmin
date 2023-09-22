@@ -73,10 +73,8 @@ class Dashboard extends Component {
         <>
           <NavLinks />
           <ImageSlider />
-
-
-          <div className="main__body">
-            <div className="main2">
+          <div className="main2">
+            <div className="inner__content">
               <div className="main-head">
                 <h1>
                   Praesent commodo cursus magna, vel scelerisque nisl consectetur
@@ -103,11 +101,20 @@ class Dashboard extends Component {
                 </h1>
               </div>
             </div>
+            <div className="placements__promise">
+              <MDBRow>
+                <MDBCol size={5}>dfv</MDBCol>
+                <MDBCol size={7}>dv k</MDBCol>
+              </MDBRow>
+            </div>
+          </div>
 
-            <div className="">
+          {/* 
+          <div>
+            <div className="main__1">
               <MDBContainer fluid>
-                <h1 className="fw-bold">
-                  {/* Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName} */}
+                <h1 className="fw-bold text-center">
+                  Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
 
                   <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
                 </h1>
@@ -315,32 +322,10 @@ class Dashboard extends Component {
                 </Link>
               </div>
             </div>
+          </div> */}
 
-            <div className="main__3">
-              <MDBRow>
-                <MDBCol size={6}></MDBCol>
-                <MDBCol className="student__section">
-                  <div className="Student__Section__head">
-                    <h4>Student's Section</h4>
-                    <div className="routing__border w-25"></div>
-                    <div className="Student__Section__data">
-                      <MDBRow>
-                        <MDBCol size={6}>
-                          <h6>Abc</h6>
-                          <p>fkjdgnvzndvg</p>
-                        </MDBCol>
-                        <MDBCol size={6}>
-                          <h6>Abc</h6>
-                          <p>fkjdgnvzndvg</p>
-                        </MDBCol>
-                      </MDBRow>
-                    </div>
-                  </div>
-                </MDBCol>
-              </MDBRow>
-            </div>
-            <Footer />
-          </div>
+
+          {/* <Footer /> */}
 
 
 

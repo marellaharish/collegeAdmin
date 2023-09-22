@@ -198,11 +198,13 @@ i {
 
 .carousel-caption {
     background-color: #ffffff9a;
-    width: 50%;
+    width: 50% !important;
     margin: auto;
     color: #000 !important;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+    position: absolute;
+    bottom: 20% !important;
 }
 
 .carousel-caption h5 {
@@ -222,15 +224,37 @@ i {
 }
 
 
-
-.main2 {
-    width: 100%;
+.main2 .inner__content {
     height: calc(100vh - 90px);
-    background: url(../Assets/bgPng.png), rgb(255, 255, 255);
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.main2 {
+    width: 100%;
+}
+
+.placements__promise {
+    height: calc(100vh - 90px);
+}
+
+.placements__promise .col-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    background-color: #0060ff;
+}
+
+.placements__promise .col-7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    background-color: #00a9ff;
 }
 
 .heading {
@@ -245,7 +269,7 @@ i {
 
 .heading:hover {
     scale: 1.03;
-    width: 50%;
+    width: 46%;
 
 }
 
@@ -560,17 +584,6 @@ p {
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-}
-
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 12.25rem;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
 }
 
 .college__details a {
@@ -1440,16 +1453,6 @@ th {
     height: 100% !important;
 }
 
-.carousel-caption {
-    position: absolute;
-    right: 15%;
-    bottom: 20% !important;
-    left: 15%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    color: #fff;
-    text-align: center;
-}
 
 .circle__div {
     width: 50%;
