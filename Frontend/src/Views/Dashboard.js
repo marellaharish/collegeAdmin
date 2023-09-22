@@ -26,6 +26,7 @@ import CampusMapandNavigation from "../Components/Assets/map-svgrepo-com.svg";
 import CanteenManagement from "../Components/Assets/food-stall-stall-svgrepo-com.svg";
 import TransportandBusServiceManagement from "../Components/Assets/bus-svgrepo-com.svg";
 import HelpandSupport from "../Components/Assets/help-center-svgrepo-com.svg";
+import Landing from "../Components/Assets/Landing image.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import MultipleImageSlider from "../Components/component/MultipleImageSlider";
@@ -74,7 +75,57 @@ class Dashboard extends Component {
           <NavLinks />
           <ImageSlider />
           <div className="main2">
-            <div className="inner__content">
+
+
+
+            <section class="landing-sec">
+              <div class="container">
+                <div class="landing-content">
+                  <div class="landing-left">
+                    <h4>Welcome to</h4>
+                    <h1>SSIET COLLEGE</h1>
+                    <p>
+                      The Philosophy of Vignana Jyothi unravels education as a process of
+                      "Presencing" that provides, both individually and collectively, to
+                      one's deepest capacity to sense and experience the knowledge and
+                      activities to shape the future. Based on a synthesis of direct
+                      experience, leading edge thinking and ancient wisdom, it taps into
+                      'deeper levels of LEARNING for discovering new possibilities'.
+                    </p>
+                    <p>
+                      Today, with this philosophy, Vignana Jyothi has created an edifice
+                      that is strong in its foundations, which can only rise higher and
+                      higher. Quality and integrity is the essence for achieving excellence
+                      at Vignana Jyothi Institutions. This and quest for excellence reflects
+                      in the vision and mission. Their passion reflects in the enterprise of
+                      education.
+                    </p>
+                    <button class="btn__landing" size="xl"><span>Hover me!</span></button>
+                  </div>
+                  <div class="landing-right">
+                    <img src={Landing} alt="" />
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <div className="inner__content">
               <div className="main-head">
                 <h1>
                   Praesent commodo cursus magna, vel scelerisque nisl consectetur
@@ -100,18 +151,18 @@ class Dashboard extends Component {
                   <p>Students</p>
                 </h1>
               </div>
-            </div>
-            <div className="placements__promise">
+            </div> */}
+            {/* <div className="placements__promise">
               <MDBRow>
                 <MDBCol size={5}>dfv</MDBCol>
                 <MDBCol size={7}>dv k</MDBCol>
               </MDBRow>
-            </div>
+            </div> */}
           </div>
 
-          {/* 
+
           <div>
-            <div className="main__1">
+            {/* <div className="main__1">
               <MDBContainer fluid>
                 <h1 className="fw-bold text-center">
                   Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
@@ -321,11 +372,11 @@ class Dashboard extends Component {
                   </div>
                 </Link>
               </div>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
 
 
-          {/* <Footer /> */}
+          <Footer />
 
 
 

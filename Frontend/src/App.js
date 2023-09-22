@@ -18,6 +18,7 @@ import LandingPage from './Views/LandingPage';
 import HelpAndSupport from './Views/Pages/HelpAndSupport';
 import FacultyViewProfile from './Views/Pages/FacultyViewProfile';
 import StudentViewProfile from './Views/Pages/StudentViewProfile';
+import MultipleImageSlider from './Components/component/MultipleImageSlider';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         <Route path="/main" index element={<HomePage />} />
         <Route path="/LandingPage" index element={<LandingPage />} />
         <Route path="/home" index element={<Dashboard />} />
+        <Route path="/MultipleImageSlider" index element={<MultipleImageSlider />} />
         <Route path="/collegeAdmissions" index element={<CollegeAdmissions />} />
         <Route path="/resultsManagement" index element={<ResultsManagement />} />
         <Route path="/ExaminationManagement" index element={<ExaminationManagement />} />
