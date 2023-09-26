@@ -78,10 +78,28 @@ class Dashboard extends Component {
 
 
 
-            <section class="landing-sec">
-              <div class="container">
-                <div class="landing-content">
-                  <div class="landing-left">
+            <section className="landing-sec">
+              <div className="container">
+
+                <div className="banner-madal-con">
+                  <div className="banner-modal-grid">
+                    <div className="banner-modal-text">
+                      <h1 className="text-center">
+                        For admission-related info, announcements
+                        and notifications, visit the admission page
+                      </h1>
+
+                      <div className="discover-btn">
+                        <a href="#" className="landing-btn">Discover More <i className="fa-solid fa-angle-right"></i></a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="landing-content">
+                  <div className="landing-left">
                     <h4>Welcome to</h4>
                     <h1>SSIET COLLEGE</h1>
                     <p>
@@ -100,9 +118,12 @@ class Dashboard extends Component {
                       in the vision and mission. Their passion reflects in the enterprise of
                       education.
                     </p>
-                    <button class="btn__landing" size="xl"><span>Hover me!</span></button>
+                    {/* <button className="btn__landing"><span>Discover More</span></button> */}
+                    <div className="discover-btn">
+                      <a href="#" className="landing-btn">Discover More <i className="fa-solid fa-angle-right"></i></a>
+                    </div>
                   </div>
-                  <div class="landing-right">
+                  <div className="landing-right">
                     <img src={Landing} alt="" />
                   </div>
                 </div>
@@ -111,53 +132,100 @@ class Dashboard extends Component {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            {/* <div className="inner__content">
-              <div className="main-head">
-                <h1>
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur
-                </h1>
+            {/* <!-- Landing Page Section  --> */}
+            <section className="vision-home">
+              <div className="container">
+                <div className="vmp-grid">
+                  <div className="vmp-in">
+                    <h1 className="section-title-start mb-5">Vision</h1>
+                    <p>
+                      To be a World Class University providing value-based education,
+                      conducting interdisciplinary research in cutting edge technologies
+                      leading to sustainable socio-economic development of the nation.
+                    </p>
+                    <p>
+                      To be a World Class University providing value-based education,
+                      conducting interdisciplinary research in cutting edge technologies
+                      leading to sustainable socio-economic development of the nation.
+                    </p>
+                  </div>
+                  <div className="vmp-in">
+                    <h1 className="section-title-start mb-5">Mission</h1>
+                    <ul>
+                      <li>
+                        To produce technically competent and socially responsible engineers,
+                        managers and entrepreneurs, who will be future ready.
+                      </li>
+                      <li>
+                        To involve students and faculty in innovative research projects
+                        linked with industry, academic and research institutions in India
+                        and abroad.
+                      </li>
+                      <li>
+                        To use modern pedagogy for improving the teaching-learning process.
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="vmp-in">
+                    <h1 className="section-title-start mb-5">Quality Policy</h1>
+                    <ul>
+                      <li>
+                        Impart up-to-date knowledge in the students' chosen fields to make
+                        them quality engineers
+                      </li>
+                      <li>
+                        Make the students experience the applications on quality equipment
+                        and tools
+                      </li>
+                      <li>Provide quality environment and services to all stakeholders</li>
+                      <li>
+                        Provide systems, resources and opportunities for continuous
+                        improvement
+                      </li>
+                      {/* <li>Maintain global standards in education, training and services</li> */}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="heading">
-                <img src={Slide1} className="img-head" />
+            </section>
+
+
+            <section class="numbers-sec">
+              <div class="container">
+                <div class="numbers-wrapper">
+                  <div class="numbers-container">
+                    <h1 className="fw-bold"><p class="count">
+                      <CountUp end={6956} separator="" duration={3.75} />
+                    </p></h1>
+                    <span>Students</span>
+                  </div>
+                  <div class="numbers-container">
+                    <h1 className="fw-bold"><p class="count">
+                      <CountUp end={480} separator="" duration={3.75} />
+                    </p></h1>
+                    <span>Faculty</span>
+                  </div>
+                  <div class="numbers-container">
+                    <h1 className="fw-bold"><p class="count">
+                      <CountUp end={86} separator="" duration={3.75} />
+                    </p></h1>
+                    <span>Research Projects</span>
+                  </div>
+                  <div class="numbers-container">
+                    <h1 className="fw-bold"><p class="count">
+                      <CountUp end={24} separator="" duration={3.75} />
+                    </p></h1>
+                    <span>Patents Granted</span>
+                  </div>
+                  <div class="numbers-container">
+                    <h1 className="fw-bold"><p class="count">
+                      <CountUp end={85} separator="" duration={3.75} />
+                    </p></h1>
+                    <span>Patents Filed</span>
+                  </div>
+                </div>
               </div>
-              <div className="image-text">
-                <p className="fs-5 mb-0">Top Quality And Learning Experience</p>
-              </div>
-              <div className="counter-text ">
-                <h1>
-                  <CountUp end={1985} separator="" duration={3.75} />
-                  <p>Established</p>
-                </h1>
-                <h1>
-                  <CountUp end={250} separator="" duration={3.75} suffix="+" />
-                  <p>Acres Green Campus</p>
-                </h1>
-                <h1>
-                  <CountUp end={50000} separator="," duration={3.75} suffix="+" />
-                  <p>Students</p>
-                </h1>
-              </div>
-            </div> */}
-            {/* <div className="placements__promise">
-              <MDBRow>
-                <MDBCol size={5}>dfv</MDBCol>
-                <MDBCol size={7}>dv k</MDBCol>
-              </MDBRow>
-            </div> */}
+            </section>
           </div>
 
 

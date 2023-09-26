@@ -1256,7 +1256,7 @@ th {
     width: 300px;
     height: 130px;
     margin: 10px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     position: relative;
 }
@@ -1484,6 +1484,13 @@ th {
     column-gap: 30px;
 }
 
+.landing-sec {
+    width: 100%;
+    height: 100%;
+    padding-top: 65px;
+    position: relative;
+}
+
 .banner-modal-grid {
     width: 100%;
     display: flex;
@@ -1494,8 +1501,6 @@ th {
 }
 
 .banner-modal-text h1 {
-    /* font-family: var(--outfit); */
-    color: #82001a;
     font-size: 35px;
     font-weight: 600;
     text-transform: capitalize;
@@ -1504,15 +1509,6 @@ th {
 .baner-btn {
     text-align: center;
     margin: 30px 0;
-}
-
-.banner-modal-text a {
-    background: none;
-    padding: 8px 20px;
-    border: 1px solid #000000;
-    font-family: var(--worksans);
-    color: var(--black-color);
-    border-radius: 20px;
 }
 
 .landing-content {
@@ -1524,17 +1520,19 @@ th {
 
 .landing-left h4 {
     font: 600 25px;
-    color: var(--black-color);
+    color: #000;
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 .landing-left h1 {
-    color: var-(--mdb-primary);
-    font-size:  55px;
-    font-weight: 800;
+    color: var(--mdb-primary);
+    font-size: 55px;
+    font-weight: bold;
+    ;
 }
 
-.landing-left p { 
+.landing-left p {
     font-size: 16px;
     line-height: 30px !important;
 }
@@ -1562,18 +1560,17 @@ th {
 
 .btn__landing {
     border: none;
-    display: block; 
     cursor: pointer;
-    text-transform: uppercase;
     outline: none;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     font-weight: 700;
-    font-size: 15px; 
-    padding: 17px 60px;
+    font-size: 14px;
+    padding: 15px 50px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
-    border-radius: 5px
+    border-radius: 5px;
+    transition: all 0.5s;
 }
 
 .btn__landing span {
@@ -1598,10 +1595,142 @@ th {
 .btn__landing:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    color: #fff !important;
 }
 
 .link {
     font-size: 20px;
     margin-top: 30px;
+}
+
+
+.btn__landing:hover {
+    color: #fff !important;
+    text-shadow: none;
+}
+
+.landing-btn:hover {
+    padding: 13px 37px;
+    border: 2px solid var(--mdb-primary);
+    color: white;
+    background-color: var(--mdb-primary);
+}
+
+.landing-btn {
+    display: inline;
+    margin-top: 100px;
+    padding: 13px 27px;
+    border: 2px solid black;
+    color: var(--grey-color);
+    border-radius: 100px;
+    font: 500 15px var(--worksans);
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+
+
+.fa-angle-right:before {
+    content: "\f105";
+}
+
+.landing-left .landing-btn i {
+    margin-left: 7px;
+    transition: all 0.2s ease;
+}
+
+.vision-home {
+    margin-top: 50px;
+}
+
+.vmp-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.vmp-in {
+    width: 33%;
+}
+
+.vmp-in p {
+    text-align: justify;
+}
+
+.section-title-start {
+    position: relative;
+    text-align: start;
+    color: #000;
+    font-size: 32px;
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.section-title-start::after {
+    position: absolute;
+    content: "";
+    background-color: var(--mdb-primary);
+    width: 16%;
+    height: 3px;
+    top: 120%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
+
+.vmp-grid ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: justify;
+}
+
+.numbers-sec {
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.numbers-wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px;
+}
+
+.numbers-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers-container h1 p {
+    font: 600 45px;
+    margin-bottom: 0;
+    color: #000;
+}
+
+.numbers-container span {
+    font: 400 20px !important;
+}
+
+.numbers-container::after {
+    position: absolute;
+    content: "";
+    background-color: var(--mdb-primary);
+    width: 3px;
+    height: 55px;
+    top: 50%;
+    right: 100%;
+    transform: translate(-100%, -50%);
+}
+
+.numbers-container:nth-child(1):after {
+    display: none;
 }
