@@ -788,9 +788,6 @@ function CollegeAdmissions() {
                                 <MDBBtn outline className="me-3 branches__btn">
                                     CONTACT US
                                 </MDBBtn>
-                                {/* <MDBBtn outline className="me-3 branches__btn">
-                  APPLY NOW
-                </MDBBtn> */}
                             </div>
                         </div>
 

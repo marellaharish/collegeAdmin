@@ -30,6 +30,7 @@ import Landing from "../Components/Assets/Landing image.png";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import MultipleImageSlider from "../Components/component/MultipleImageSlider";
+import PlacementSlider from "../Components/component/PlacementSlider";
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -96,6 +97,14 @@ class Dashboard extends Component {
                     </div>
                   </div>
                 </div>
+
+                <MDBContainer fluid>
+                  <h1 className="fw-bold text-center">
+                    Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
+
+                    <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
+                  </h1>
+                </MDBContainer>
 
 
                 <div className="landing-content">
@@ -229,8 +238,127 @@ class Dashboard extends Component {
           </div>
 
 
+
+          <section class="life-at-vnr mb-4">
+            <div class="container">
+              <div class="life-at-vnr-content">
+
+                <div class="lavnr-images">
+                  <div class="imgs-1">
+                    <a href="https://vnrvjiet.ac.in/">
+                      <section class="lavnr-image-container">
+                        <img src="https://vnrvjiet.ac.in/assets/images/Component 3.png" alt="" />
+                        <span>Research <br />
+                          Projects</span>
+                      </section>
+                    </a>
+                    <a href="https://www.vnralums.com/" target="_blank">
+                      <section class="lavnr-image-container">
+                        <img src="https://vnrvjiet.ac.in/assets/images/Component 1.png" alt="" />
+                        <span>Our <br />
+                          Alumni</span>
+                      </section>
+                    </a>
+                  </div>
+                  <a href="https://vnrvjiet.ac.in/">
+                    <section class="lavnr-image-container">
+                      <img src="https://vnrvjiet.ac.in/assets/images/Component 1 (1).png" alt="" />
+                      <span>Placements</span>
+                    </section>
+                  </a>
+                  <div class="imgs-2">
+                    <a href="https://vnrvjiet.ac.in/admissions">
+                      <section class="lavnr-image-container">
+                        <img src="https://vnrvjiet.ac.in/assets/images/Component 2.png" alt="" />
+                        <span>Admissions</span>
+                      </section>
+                    </a>
+                    <div class="imgs-3">
+                      <a href="https://vnrvjiet.ac.in/campus">
+                        <section class="lavnr-image-container">
+                          <img src="https://vnrvjiet.ac.in/assets/images/Component 3 (1).png" alt="" />
+                          <span>Our <br />
+                            Campus</span>
+                        </section>
+                      </a>
+                      <a href="https://vnrvjiet.ac.in/student-centre">
+                        <section class="lavnr-image-container">
+                          <img src="https://vnrvjiet.ac.in/assets/images/Component 2 (1).png" alt="" />
+                          <span>Student <br />
+                            Chapters</span>
+                        </section>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* 
+          <MDBContainer>
+            <h2 className="Our__Recruiters mt-4">
+              Our Recruiters
+            </h2>
+            <PlacementSlider />
+          </MDBContainer> */}
+
+
+          {/* <section class="achievements-sec">
+            <div class="container">
+              <h1 class="section-title">Student Achievements</h1>
+              <div class="achievements-grid">
+                <div class="achievements-container">
+                  <div class="achievements-box">
+                    <img src="https://vnrvjiet.ac.in/assets/images/Component 1.png" alt="" />
+                    <div class="achievements-box-content">
+                      <h4>
+                        VNRVJIET has been presented with the Mathworks ICTIEE Award - 2023
+                        for Academic&nbsp;Excellence
+                      </h4>
+                      <span>July 21, 2023</span>
+                    </div>
+                  </div>
+                  <div class="small-achievements">
+                    <h4>
+                      Ch. Abhilash won Silver Medal in 400m freestyle &amp; 5th place in 400m
+                      Individual Medely Swimming at Khelo India University Games 2021
+                    </h4>
+                    <span>April 24, 2022</span>
+                  </div>
+                </div>
+                <div class="achievements-container">
+                  <div class="small-achievements">
+                    <h4>
+                      Congratulations to Pranavi Chaturvedula for winning the ET Campus
+                      Star Class of 2022 by Economic Times
+                    </h4>
+                    <span>August 18, 2022</span>
+                  </div>
+                  <div class="achievements-box">
+                    <img src="https://vnrvjiet.ac.in/assets/images/Component 2.png" alt="" />
+                    <div class="achievements-box-content">
+                      <h4>
+                        Two of our CSE students K. Hiranmai Sai Supriya &amp; Srija Tulasi got
+                        placed in Google with a CTC of 22.4 lakhs &amp; Alphabet stocks worth
+                        32500 USD
+                      </h4>
+                      <span>July 7, 2022</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> */}
+
+
+
+
+
+
+
+
           <div>
-            {/* <div className="main__1">
+            <div className="main__1">
               <MDBContainer fluid>
                 <h1 className="fw-bold text-center">
                   Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
@@ -440,7 +568,7 @@ class Dashboard extends Component {
                   </div>
                 </Link>
               </div>
-            </div> */}
+            </div>
           </div>
 
 

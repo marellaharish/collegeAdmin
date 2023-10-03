@@ -32,7 +32,7 @@ function NavLinks(props) {
             <>
 
 
-                <MDBNavbar sticky expand='lg' light bgColor='light' >
+                <MDBNavbar sticky expand='lg' light className="blur_bg" >
                     <MDBContainer fluid>
                         <MDBNavbarBrand href='#'>
                             <img

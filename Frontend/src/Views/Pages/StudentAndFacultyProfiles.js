@@ -76,7 +76,7 @@ function StudentAndFacultyProfiles() {
                         </div>
                     </MDBContainer>
 
-                    <MDBContainer className='mb-5 bg-white mt-3'>
+                    <MDBContainer className='mb-5 mt-3'>
                         <div className='text-center'>
                             <h2 className='fw-bold'>Select Profile To See</h2>
                             <p className='w-50 m-auto text-secondary'>

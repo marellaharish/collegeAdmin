@@ -19,6 +19,7 @@ import HelpAndSupport from './Views/Pages/HelpAndSupport';
 import FacultyViewProfile from './Views/Pages/FacultyViewProfile';
 import StudentViewProfile from './Views/Pages/StudentViewProfile';
 import MultipleImageSlider from './Components/component/MultipleImageSlider';
+import SkeletonLoading from './Components/component/SkeletonLoading';
 
 
 
@@ -36,7 +37,6 @@ function App() {
         <Route path="/main" index element={<HomePage />} />
         <Route path="/LandingPage" index element={<LandingPage />} />
         <Route path="/home" index element={<Dashboard />} />
-        <Route path="/MultipleImageSlider" index element={<MultipleImageSlider />} />
         <Route path="/collegeAdmissions" index element={<CollegeAdmissions />} />
         <Route path="/resultsManagement" index element={<ResultsManagement />} />
         <Route path="/ExaminationManagement" index element={<ExaminationManagement />} />
@@ -47,6 +47,7 @@ function App() {
         <Route path="/FacultyViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/StudentViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
+        <Route path="/SkeletonLoading" index element={<SkeletonLoading />} />
         <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />
         <Route path="/footer" index element={<Footer />} />
