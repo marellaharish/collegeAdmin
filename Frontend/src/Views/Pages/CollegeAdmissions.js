@@ -19,9 +19,154 @@ import Alarm from "../../Components/Assets/alarm-clock-svgrepo-com.svg";
 import ECE from "../../Components/Assets/electrical-sensor-svgrepo-com.svg";
 import EEE from "../../Components/Assets/power-energy-bolt-thunderbolt-electricity-svgrepo-com.svg";
 import CIVIL from "../../Components/Assets/building-construction-excavator-svgrepo-com.svg";
+import Branches from "../../Components/component/Branches";
 
 import { MDBContainer } from "mdb-react-ui-kit";
 function CollegeAdmissions() {
+
+    const branchesData = [
+        {
+            name: 'Computer Science Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Electronics & Communication Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: ECE,
+        },
+        {
+            name: 'Electrical & Electronics Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Artificial Intelligence and Data Science',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: '	Civil Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CIVIL,
+        },
+        {
+            name: 'Information Technology',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Mechanical Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Information Technology',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Mechanical Engineering',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+
+    ];
+
+    const masterBranchesData = [
+        {
+            name: 'Master of Business Administration',
+            degree: 'MBA',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Power Electronics',
+            degree: 'MTech',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Very Large Scale Integration - VLSI',
+            degree: 'MTech',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Computer Science Engineering',
+            degree: 'MTech',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'AI & DS',
+            degree: 'MTech',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+        {
+            name: 'Machine Design',
+            degree: 'MTech',
+            duration: '2 Years',
+            intake: '120',
+            semesters: '4',
+            fee: '45,900',
+            imgSrc: CSE,
+        },
+    ]
+
+
     return (
         <React.Fragment>
             <>
@@ -229,568 +374,138 @@ function CollegeAdmissions() {
                                 </div>
                             </MDBCol>
                         </MDBRow>
-                        <div className="Undergraduate__Courses">
-                            <h2>Undergraduate Courses</h2>
-                            <div className="Course__branches">
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={ECE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Electronics & Communication Engg.
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={EEE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Electrical & Electronics Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CIVIL} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
+
+
+                        <section class="updates-sec">
+                            <div class="container">
+                                <div class="updates-content" style={{ gap: 50 }}>
+                                    <div class="admission-news-container">
+                                        <div class="mb-6">
+                                            <h1 class="section-title-start">Admission News</h1>
+                                            <a href="https://vnrvjiet.ac.in/assets/images/M-Tech-Management-quota-notification.jpg" target="_blank">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        M.Tech management Quota notification
+                                                    </p>
+                                                    <span>September 23, 2023</span>
+                                                </div>
+                                            </a>
+                                            <a href="https://vnrvjiet.ac.in/assets/pdfs/M-Tech-Management-application-2023.pdf" target="_blank">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        M.Tech management Application-2023
+                                                    </p>
+                                                    <span>September 23, 2023</span>
+                                                </div>
+                                            </a>
+
+                                            <a href="https://vnrvjiet.ac.in/assets/pdfs/Automobile-CAT-B.pdf" target="_blank">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        CAT-B Admissions
+                                                    </p>
+                                                    <span>September 8, 2023</span>
+                                                </div>
+                                            </a>
+                                            <a href="https://vnrvjiet.ac.in/assets/images/PG-Research-Assistantship.jpg" target="_blank">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        M.Tech Research Assistantship
+                                                    </p>
+                                                    <span>September 8, 2023</span>
+                                                </div>
+                                            </a>
+                                            <a href="https://vnrvjiet.ac.in/assets/images/Supernumerary-Quota.png">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        Admission Notification for 1st year B.Tech Supernumerary Quota - Foreign Nationals/OCI/CIWGC category
+                                                    </p>
+                                                    <span>July 20, 2023</span>
+
+                                                </div>
+                                            </a>
+
+                                            <a href="https://automation.vnrvjiet.ac.in/eduprime3/admissions">
+                                                <div class="news-content mb-3">
+                                                    <p>
+                                                        Application for Foreign Nationals/OCI/CIWGC category
+                                                    </p>
+                                                    <span>July 20, 2023</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="d-flex align-items-center ">
-                                <MDBBtn outline className="me-3 branches__btn">
-                                    ELIGIBILITY CRITERIA
-                                </MDBBtn>
-                                <MDBBtn outline className="me-3 branches__btn">
-                                    CONTACT US
-                                </MDBBtn>
-                                <MDBBtn outline className="me-3 branches__btn">
-                                    APPLY NOW
-                                </MDBBtn>
-                            </div>
-                        </div>
+                        </section>
+
 
                         <div className="Undergraduate__Courses">
                             <h2>Undergraduate Courses</h2>
                             <div className="Course__branches">
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
 
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={ECE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Electronics & Communication Engg.
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
-
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={EEE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Electrical & Electronics Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
-
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CIVIL} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
-
-                                <div className="branches">
-                                    <MDBRow className="d-flex align-items-center">
-                                        <MDBCol size={4} className="d-flex align-items-center ">
-                                            <img src={CSE} className="branches__img" />
-                                        </MDBCol>
-                                        <MDBCol
-                                            size={8}
-                                            className="d-flex align-items-center flex-column mt-2"
-                                        >
-                                            <h6 className="text-left">
-                                                Computer Science Engineering
-                                            </h6>
-                                            <p>B.Tech</p>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="d-flex align-items-center">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={calender} className="calender__img" />
-                                                <p className="mb-0 ms-3">Duration - 4 Years</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6}>
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={People} className="calender__img" />
-                                                <p className="mb-0 ms-3">Intake - 60</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left ms-2">
-                                                <img src={Alarm} className="calender__img" />
-                                                <p className="mb-0 ms-3">Semesters - 8</p>
-                                            </div>
-                                        </MDBCol>
-                                        <MDBCol size={6} className="mt-3">
-                                            <div className="d-flex align-items-center text-left">
-                                                <img src={Money} className="calender__img" />
-                                                <p className="mb-0 ms-3">Fee - ₹ 45,900</p>
-                                            </div>
-                                        </MDBCol>
-                                    </MDBRow>
-                                </div>
-                            </div>
-                            <div className="d-flex align-items-center justify-content-center">
-                                <MDBBtn outline className="me-3 branches__btn">
-                                    ELIGIBILITY CRITERIA
-                                </MDBBtn>
-                                <MDBBtn outline className="me-3 branches__btn">
-                                    CONTACT US
-                                </MDBBtn>
+                                {branchesData.map((branch, index) => (
+                                    <Branches
+                                        key={index}
+                                        name={branch.name}
+                                        degree={branch.degree}
+                                        duration={branch.duration}
+                                        intake={branch.intake}
+                                        semesters={branch.semesters}
+                                        fee={branch.fee}
+                                        imgSrc={branch.imgSrc}
+                                    />
+                                ))}
                             </div>
                         </div>
 
+
+                        <div className="Undergraduate__Courses">
+                            <h2>Postgraduate Courses</h2>
+                            <div className="Course__branches">
+
+                                {masterBranchesData.map((branch, index) => (
+                                    <Branches
+                                        key={index}
+                                        name={branch.name}
+                                        degree={branch.degree}
+                                        duration={branch.duration}
+                                        intake={branch.intake}
+                                        semesters={branch.semesters}
+                                        fee={branch.fee}
+                                        imgSrc={branch.imgSrc}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        {/* 
                         <div className="Undergraduate__Courses">
                             <h2>Scholarships</h2>
 
@@ -809,7 +524,7 @@ function CollegeAdmissions() {
                                 promoted to higher classes even if they have not cleared the
                                 subjects are eligible for the scheme.
                             </p>
-                        </div>
+                        </div> */}
                     </MDBContainer>
                     <Footer />
                 </div>

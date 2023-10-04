@@ -886,17 +886,8 @@ p {
     font-family: "Poppins", sans-serif;
 }
 
-.Course__branches {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 25px;
-    margin: auto;
-}
-
 .branches {
-    width: 380px;
+    width: 400px;
     height: auto;
     margin-left: 15px;
     margin-top: 15px;
@@ -905,11 +896,18 @@ p {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     cursor: pointer;
     transition: all 0.2s;
-    padding: 15px;
+    padding: 25px 15px;
+    display: inline-flex;
+}
+
+.branches h6 {
+    font-weight: 600 !important;
 }
 
 .branches p {
     font-size: 12px;
+    text-align: left;
+    width: 100%;
 }
 
 .branches__img {
@@ -1951,4 +1949,82 @@ th {
     color: var(--white-color);
     font: 600 24px;
     margin-bottom: 50px;
+}
+
+.updates-sec {
+    padding: 100px 0;
+}
+
+.updates-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.admission-news-container {
+    width: 90%;
+}
+
+.mb-6 {
+    margin-bottom: 3.5rem !important;
+}
+
+.section-title-start {
+    position: relative;
+    text-align: start;
+    color: var(--black-color);
+    font: 600 32px var(--outfit);
+    margin-bottom: 60px;
+}
+
+.section-title-start::after {
+    position: absolute;
+    content: "";
+    background-color: var(--mdb-primary);
+    width: 16%;
+    height: 2px;
+    top: 120%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
+
+.news-content {
+    border: 1px solid #909090;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: 0.2s ease-in-out;
+}
+
+.news-content {
+    position: relative;
+    height: 109px;
+    transition: 0.2s ease-in-out;
+}
+
+.news-content p {
+    font-size: 15px;
+    font-family: var(--worksans);
+    color: var(--black-color);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.news-content span {
+    font-family: var(--worksans);
+    color: #495057;
+}
+
+.news-content:hover {
+    background-color: var(--mdb-primary);
+}
+
+.news-content:hover p {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.news-content:hover span {
+    color: var(--white-color);
 }

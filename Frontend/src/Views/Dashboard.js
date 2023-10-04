@@ -31,6 +31,8 @@ import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import MultipleImageSlider from "../Components/component/MultipleImageSlider";
 import PlacementSlider from "../Components/component/PlacementSlider";
+import Marquee from "react-fast-marquee";
+
 class Dashboard extends Component {
   constructor(props) {
     super(props);
@@ -352,20 +354,24 @@ class Dashboard extends Component {
 
 
 
+          <MDBContainer fluid>
+            <h1 className="fw-bold text-center">
+              Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
 
+              <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
+            </h1> 
+          </MDBContainer>
+
+
+          <Marquee className="marquee" pauseOnHover speed='40'>
+            Sri Sarathi Institute Engineering of Technology.
+          </Marquee>
 
 
 
 
           <div>
             <div className="main__1">
-              <MDBContainer fluid>
-                <h1 className="fw-bold text-center">
-                  Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
-
-                  <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
-                </h1>
-              </MDBContainer>
               <div className="college__details ">
                 <div className="w-100 head__features">
                   <h1>Quick Links</h1>

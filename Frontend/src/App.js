@@ -18,9 +18,9 @@ import LandingPage from './Views/LandingPage';
 import HelpAndSupport from './Views/Pages/HelpAndSupport';
 import FacultyViewProfile from './Views/Pages/FacultyViewProfile';
 import StudentViewProfile from './Views/Pages/StudentViewProfile';
-import MultipleImageSlider from './Components/component/MultipleImageSlider';
 import SkeletonLoading from './Components/component/SkeletonLoading';
-
+import Branches from './Components/component/Branches';
+import Departments from './Views/Pages/Departments';
 
 
 function App() {
@@ -48,6 +48,8 @@ function App() {
         <Route path="/StudentViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/CourseRegistration" index element={<CourseRegistration />} />
         <Route path="/SkeletonLoading" index element={<SkeletonLoading />} />
+        <Route path="/Branches" index element={<Branches />} />
+        <Route path="/Departments" index element={<Departments />} />
         <Route path="/HelpAndSupport" index element={<HelpAndSupport />} />
         <Route path="/navLinks" index element={<NavLinks />} />
         <Route path="/footer" index element={<Footer />} />
