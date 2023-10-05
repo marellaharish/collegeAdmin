@@ -12,13 +12,23 @@ import {
 import AboutBanner from "../../Components/Assets/banner1.png";
 import copywriting from "../../Components/Assets/copywriter.png";
 import CSE from "../../Components/Assets/computer-svgrepo-com.svg";
+import ECE from "../../Components/Assets/electrical-sensor-svgrepo-com.svg";
+import EEE from "../../Components/Assets/electric-tower-svgrepo-com.svg";
+import AIDS from "../../Components/Assets/artificial-intelligence-svgrepo-com.svg";
+import IT from "../../Components/Assets/laptop-svgrepo-com.svg";
+import AIML from "../../Components/Assets/machine-learning-svgrepo-com.svg";
+import CIVIL from "../../Components/Assets/civil-engineering-tools-svgrepo-com.svg";
+import MECH from "../../Components/Assets/cog-configure-gear-svgrepo-com.svg";
+import Bussiness from "../../Components/Assets/business-svgrepo-com.svg";
+import Power from "../../Components/Assets/voltage-solid-svgrepo-com.svg";
+import VLSI from "../../Components/Assets/chip-svgrepo-com.svg";
+import MD from "../../Components/Assets/database-svgrepo-com.svg";
+
+
 import calender from "../../Components/Assets/event-calender-date-note-svgrepo-com.svg";
 import People from "../../Components/Assets/users-group-two-rounded-svgrepo-com.svg";
 import Money from "../../Components/Assets/money-bag-svgrepo-com.svg";
 import Alarm from "../../Components/Assets/alarm-clock-svgrepo-com.svg";
-import ECE from "../../Components/Assets/electrical-sensor-svgrepo-com.svg";
-import EEE from "../../Components/Assets/power-energy-bolt-thunderbolt-electricity-svgrepo-com.svg";
-import CIVIL from "../../Components/Assets/building-construction-excavator-svgrepo-com.svg";
 import Branches from "../../Components/component/Branches";
 
 import { MDBContainer } from "mdb-react-ui-kit";
@@ -26,7 +36,7 @@ function CollegeAdmissions() {
 
     const branchesData = [
         {
-            name: 'Computer Science Engineering',
+            name: 'Computer Science Engineering (CSE)',
             degree: 'B.Tech',
             duration: '4 Years',
             intake: '60',
@@ -35,7 +45,7 @@ function CollegeAdmissions() {
             imgSrc: CSE,
         },
         {
-            name: 'Electronics & Communication Engineering',
+            name: 'Electronics & Communication Engineering(ECE)',
             degree: 'B.Tech',
             duration: '4 Years',
             intake: '60',
@@ -44,22 +54,40 @@ function CollegeAdmissions() {
             imgSrc: ECE,
         },
         {
-            name: 'Electrical & Electronics Engineering',
+            name: 'Electrical & Electronics Engineering(EEE)',
             degree: 'B.Tech',
             duration: '4 Years',
             intake: '60',
             semesters: '8',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: EEE,
         },
         {
-            name: 'Artificial Intelligence and Data Science',
+            name: 'Artificial Intelligence and Data Science(AI&DS)',
             degree: 'B.Tech',
             duration: '4 Years',
             intake: '60',
             semesters: '8',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: AIDS,
+        },
+        {
+            name: 'Information Technology(IT)',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: IT,
+        },
+        {
+            name: 'Artificial Intelligence & Machine Learning(AI&ML)',
+            degree: 'B.Tech',
+            duration: '4 Years',
+            intake: '60',
+            semesters: '8',
+            fee: '45,900',
+            imgSrc: AIML,
         },
         {
             name: '	Civil Engineering',
@@ -71,41 +99,15 @@ function CollegeAdmissions() {
             imgSrc: CIVIL,
         },
         {
-            name: 'Information Technology',
-            degree: 'B.Tech',
-            duration: '4 Years',
-            intake: '60',
-            semesters: '8',
-            fee: '45,900',
-            imgSrc: CSE,
-        },
-        {
             name: 'Mechanical Engineering',
             degree: 'B.Tech',
             duration: '4 Years',
             intake: '60',
             semesters: '8',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: MECH,
         },
-        {
-            name: 'Information Technology',
-            degree: 'B.Tech',
-            duration: '4 Years',
-            intake: '60',
-            semesters: '8',
-            fee: '45,900',
-            imgSrc: CSE,
-        },
-        {
-            name: 'Mechanical Engineering',
-            degree: 'B.Tech',
-            duration: '4 Years',
-            intake: '60',
-            semesters: '8',
-            fee: '45,900',
-            imgSrc: CSE,
-        },
+
 
     ];
 
@@ -117,7 +119,7 @@ function CollegeAdmissions() {
             intake: '120',
             semesters: '4',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: Bussiness,
         },
         {
             name: 'Power Electronics',
@@ -126,7 +128,7 @@ function CollegeAdmissions() {
             intake: '120',
             semesters: '4',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: Power,
         },
         {
             name: 'Very Large Scale Integration - VLSI',
@@ -135,25 +137,7 @@ function CollegeAdmissions() {
             intake: '120',
             semesters: '4',
             fee: '45,900',
-            imgSrc: CSE,
-        },
-        {
-            name: 'Computer Science Engineering',
-            degree: 'MTech',
-            duration: '2 Years',
-            intake: '120',
-            semesters: '4',
-            fee: '45,900',
-            imgSrc: CSE,
-        },
-        {
-            name: 'AI & DS',
-            degree: 'MTech',
-            duration: '2 Years',
-            intake: '120',
-            semesters: '4',
-            fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: VLSI,
         },
         {
             name: 'Machine Design',
@@ -162,7 +146,7 @@ function CollegeAdmissions() {
             intake: '120',
             semesters: '4',
             fee: '45,900',
-            imgSrc: CSE,
+            imgSrc: MD,
         },
     ]
 
@@ -191,7 +175,7 @@ function CollegeAdmissions() {
                     </MDBContainer>
 
                     <MDBContainer className="mb-5">
-                        <div className="mt-5 about__title">
+                        <div className="about__title">
                             <div>
                                 <div className="join__txt"> Join With Us </div>
                                 <h2>Your Future, Our Mission.</h2>
@@ -199,7 +183,43 @@ function CollegeAdmissions() {
                             <img src={AboutBanner} className="AboutBanner__img" />
                         </div>
 
-                        <MDBRow>
+                        <section class="dept-landing-sec">
+                            <div class="container">
+                                <div class="dept-landing-content">
+                                    <div class="dept-landing-left">
+                                        <h1>Admissions</h1>
+                                        <p>
+                                            Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering and
+                                            Technology (VNRVJIET), sponsored by Vignana Jyothi, was established in
+                                            1995 with the permission of All India Council for Technical Education
+                                            (AICTE), New Delhi and the Government of (erstwhile) Andhra Pradesh.
+                                            The Institute is autonomous under UGC and is affiliated to
+                                            JNTU-Hyderabad and is recognised under Section 2(f) and 12 (B) of UGC
+                                            Act, 1956. The Institute is accredited by NAAC with 'A++' Grade, rated
+                                            “Diamond” by QS I-GAUGE, and is ISO 9001:2015 certified. The Institute
+                                            offers <a>14 B.Tech. programmes</a>,13 M.Tech. programmes, and 5 Ph.D.
+                                            programmes. All eligible undergraduate programmes and four
+                                            postgraduate programmes are accredited by the National Board of
+                                            Accreditation (NBA). The tuition fees for all programmes are
+                                            stipulated as per the Government Order by Telangana State which, under
+                                            Convener Quota, is ₹1,35,000 per year for B.Tech. and ₹1,30,000 per
+                                            year for M.Tech. programmes.
+                                        </p>
+                                        <p >
+                                            <strong>VNRVJIET follows the relevant guidelines from the Government of
+                                                Telangana State for admissions. Parents/ Students are strongly
+                                                discouraged to not approach any agencies/ consultants that make fake
+                                                commitments about admissions under Management Quota or any other
+                                                pathway. The Institute and its Administration &amp; Management are not
+                                                responsible for any false commitments given by
+                                                third-party&nbsp;agents.</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        {/* <MDBRow>
                             <MDBCol size={4}>
                                 <div className="form__full__box">
                                     <div class="form_title">
@@ -373,7 +393,11 @@ function CollegeAdmissions() {
                                     </div>
                                 </div>
                             </MDBCol>
-                        </MDBRow>
+                        </MDBRow> */}
+
+
+
+
 
 
 
