@@ -100,28 +100,24 @@ function StudentAndFacultyProfiles() {
                 <NavLinks />
 
 
-
-
+                <div className="College__Admissions">
+                    <div className="Admissions__head">
+                        <h1>Student and Faculty Profiles</h1>
+                        <div>
+                            <MDBBreadcrumb>
+                                <MDBBreadcrumbItem>
+                                    <a href="#">Home</a>
+                                </MDBBreadcrumbItem>
+                                <MDBBreadcrumbItem>
+                                    <a href="#">Student and Faculty Profiles</a>
+                                </MDBBreadcrumbItem>
+                            </MDBBreadcrumb>
+                        </div>
+                    </div>
+                </div>
 
 
                 <div className="main__bodySub">
-                    <MDBContainer fluid>
-                        <div className="College__Admissions">
-                            <div className="Admissions__head">
-                                <h1>Student and Faculty Profiles</h1>
-                                <div>
-                                    <MDBBreadcrumb>
-                                        <MDBBreadcrumbItem>
-                                            <a href="#">Home</a>
-                                        </MDBBreadcrumbItem>
-                                        <MDBBreadcrumbItem>
-                                            <a href="#">Student and Faculty Profiles</a>
-                                        </MDBBreadcrumbItem>
-                                    </MDBBreadcrumb>
-                                </div>
-                            </div>
-                        </div>
-                    </MDBContainer>
 
                     <MDBContainer className='mb-5 mt-3'>
                         <div className='text-center'>

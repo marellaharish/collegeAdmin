@@ -92,21 +92,19 @@ class Dashboard extends Component {
                         and notifications, visit the admission page
                       </h1>
 
-                      <div className="discover-btn">
+                      {/* <div className="discover-btn">
                         <a href="#" className="landing-btn">Discover More <i className="fa-solid fa-angle-right"></i></a>
 
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
 
-                <MDBContainer fluid>
-                  <h1 className="fw-bold text-center">
+                {/* <h1 className="fw-bold text-center">
                     Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
 
                     <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
-                  </h1>
-                </MDBContainer>
+                  </h1> */}
 
 
                 <div className="landing-content">
@@ -356,10 +354,10 @@ class Dashboard extends Component {
 
           <MDBContainer fluid>
             <h1 className="fw-bold text-center">
-              Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName}
+              {/* Welcome {JSON.parse(sessionStorage.getItem("userinfo")).fName} {JSON.parse(sessionStorage.getItem("userinfo")).lName} */}
 
               <MDBBtn onClick={this.logout} className="ms-2">Logout</MDBBtn>
-            </h1> 
+            </h1>
           </MDBContainer>
 
 
@@ -501,7 +499,7 @@ class Dashboard extends Component {
                     alt="..."
                     className="features__logo"
                   />
-                  <p>Internship and Placement Portal</p>
+                  <p>Training and Placement</p>
                 </div>
 
                 <div className="college__features">

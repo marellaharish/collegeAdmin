@@ -21,6 +21,7 @@ import StudentViewProfile from './Views/Pages/StudentViewProfile';
 import SkeletonLoading from './Components/component/SkeletonLoading';
 import Branches from './Components/component/Branches';
 import Departments from './Views/Pages/Departments';
+import TrainingandPlacements from './Views/Pages/TrainingandPlacements';
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/HolidaysandTimeTable" index element={<HolidaysandTimeTable />} />
         <Route path="/AttendanceTracking" index element={<AttendanceTracking />} />
         <Route path="/StudentAndFacultyProfiles" index element={<StudentAndFacultyProfiles />} />
+        <Route path="/TrainingandPlacements" index element={<TrainingandPlacements />} />
         <Route path="/LibraryManagement" index element={<LibraryManagement />} />
         <Route path="/FacultyViewProfile" index element={<FacultyViewProfile />} />
         <Route path="/StudentViewProfile" index element={<FacultyViewProfile />} />

@@ -156,23 +156,21 @@ function CollegeAdmissions() {
             <>
                 <NavLinks />
                 <div className="main__bodySub">
-                    <MDBContainer fluid>
-                        <div className="College__Admissions">
-                            <div className="Admissions__head">
-                                <h1>Admissions</h1>
-                                <div>
-                                    <MDBBreadcrumb>
-                                        <MDBBreadcrumbItem>
-                                            <a href="#">Home</a>
-                                        </MDBBreadcrumbItem>
-                                        <MDBBreadcrumbItem>
-                                            <a href="#">Admissions</a>
-                                        </MDBBreadcrumbItem>
-                                    </MDBBreadcrumb>
-                                </div>
+                    <div className="College__Admissions">
+                        <div className="Admissions__head">
+                            <h1>Admissions</h1>
+                            <div>
+                                <MDBBreadcrumb>
+                                    <MDBBreadcrumbItem>
+                                        <a href="#">Home</a>
+                                    </MDBBreadcrumbItem>
+                                    <MDBBreadcrumbItem>
+                                        <a href="#">Admissions</a>
+                                    </MDBBreadcrumbItem>
+                                </MDBBreadcrumb>
                             </div>
                         </div>
-                    </MDBContainer>
+                    </div>
 
                     <MDBContainer className="mb-5">
                         <div className="about__title">
